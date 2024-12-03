@@ -1,0 +1,148 @@
+\documentclass[%
+	ngerman,
+	12pt,
+	a4paper
+]{scrbook}
+\usepackage{graphicx}
+\usepackage{babel}
+\usepackage{minted}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\setmainfont{Source Sans Pro}
+\setmonofont{Cascadia Code}
+\usepackage{tcolorbox}
+
+% Definition der Boxen
+\newtcolorbox{tipbox}{
+	colback=green!5!white,
+	colframe=green!75!black,
+	fonttitle=\bfseries,
+	title=Tipp,
+	sharp corners
+}
+
+\newtcolorbox{warningbox}{
+	colback=red!5!white,
+	colframe=red!75!black,
+	fonttitle=\bfseries,
+	title=Achtung,
+	sharp corners
+}
+
+\newtcolorbox{examplebox}{
+	colback=blue!5!white,
+	colframe=blue!75!black,
+	fonttitle=\bfseries,
+	title=Beispiel,
+	sharp corners
+}
+
+\title{Pflichtenheft}
+\subtitle{Konzeption und prototypische Implementierung eines B2B-Webshops}
+\author{WI22A-AKI}
+
+\begin{document}
+\maketitle
+
+\section{Projektteilnehmer}
+\begin{tabular}{l|l|l}
+	\textbf{Name}                & \textbf{Vorname} & \textbf{Matrikelnummer} \\ \hline
+	Christ (Projektleiter)       & Colin            & 4359760                 \\
+	Spatzek (stv. Projektleiter) & Steffen          & 3854031                 \\ \hline
+	Arnold                       & Daniel           & 8627710                 \\
+	Bamberger                    & Bastian          & 2923282                 \\
+	Denz                         & Andreas          & 5428962                 \\
+	Jeevakanthan                 & Milan            & 9892846                 \\
+	Kanjo                        & Alan             & 9795498                 \\
+	Kunz                         & Paul             & 2338290                 \\
+	Schreck                      & David            & 3533132                 \\
+	Strohm                       & Julian           & 7956706                 \\
+	Swoboda                      & Timo             & 4388948                 \\
+	Tomanek                      & Lukas            & 5985858                 \\
+	Väth                         & Luis             & 8122258                 \\
+	Weis                         & Noah             & 1555500
+\end{tabular}
+
+\tableofcontents
+
+\chapter{Zielsetzung}
+Beschreibung des Projektziels:
+\begin{itemize}
+	\item Warum wird das Projekt durchgeführt?
+	\item Welche Probleme sollen gelöst werden?
+\end{itemize}
+
+\section{Musskriterien}
+	\subsection{Allgemeine Anforderungen}
+		\subsubsection{Benutzerverwaltung}
+			Rollenbasierte Verwaltung:
+			\begin{itemize}
+				\item Administrator (alle Rechte, Pflege des Artikelkatalogs)
+				\item Interne Mitarbeiter (eingeschränkte Rechte)
+				\item Externe Kunden (Anlegen/Pflegen von Accounts, ggf. Sperren)
+			\end{itemize}
+		\subsubsection{Artikelsuche und Anzeige}
+			\begin{itemize}
+				\item Katalog zur Suche
+				\item semantische Suche
+			\end{itemize}
+		\subsubsection{Bestellprozess}
+		\begin{itemize}
+			\item Implementierung eines rudimentären Prozesses für Bestellungen
+		\end{itemize}
+		\subsubsection{KI-Komponente}
+		\begin{itemize}
+			\item für Produktempfehlungen oder kundenspezifische Preisfestlegung
+		\end{itemize}
+		\subsubsection{Aufgabenaufteilung}
+		\begin{itemize}
+			\item Entwurf sinnvoller Use-Cases, Datenmodelle und Software-Architekturkomponenten
+		\end{itemize}
+		\subsubsection{Meilensteine}
+		\begin{itemize}
+			\item Definition von Projektmeilensteinen und Kommunikation bei Abweichungen
+		\end{itemize}
+		\subsubsection{Software-Engineering-Prinzipien}
+		\begin{itemize}
+			\item Anwendung von Kern- und Unterstützungsprozessen des Software-Engineering
+			\item Einhaltung gängiger Namenskonventionen (z.~B. CamelCase, Methodennamen als Verben)
+		\end{itemize}
+		\subsubsection{Dokumentation}
+		\begin{itemize}
+			\item Angemessene und fortlaufende Dokumentation, einschließlich Programmcodes
+		\end{itemize}
+		\subsubsection{Projektmanagement}
+		\begin{itemize}
+			\item Regelmäßige Fortschrittsmitteilungen (z.~B. via E-Mail und in einem Log)
+		\end{itemize}
+
+\subsection{Technische Anforderungen}
+\subsection{Entwicklungsprozess}
+\subsection{Präsentation und Abgabe}
+
+\section{Wunschkriterien}
+\section{Abgrenzungskriterien}
+
+\chapter{Produkteinsatz}
+\section{Anwendungsbereich}
+\section{Zielgruppen}
+\section{Betriebsbedingungen}
+
+\chapter{Produktübersicht}
+
+\chapter{Detaillierte Produktfunktionen}
+\section{User Stories}
+\section{Funktionale Anforderungen}
+\section{Nicht-funktionale Anforderungen}
+
+\chapter{Produktdaten}
+\chapter{Systemarchitektur}
+\chapter{Datenmodell}
+\chapter{Schnittstellendefinition (API)}
+\chapter{Benutzungsoberflächen}
+
+\chapter{Projektorganisation}
+\section{Projektmethodik}
+\section{Rollenverteilung}
+
+\end{document}
