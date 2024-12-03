@@ -1,7 +1,8 @@
 \documentclass[%
 	ngerman,
 	12pt,
-	a4paper
+	a4paper,
+	oneside
 ]{scrbook}
 \usepackage{graphicx}
 \usepackage{babel}
@@ -11,6 +12,7 @@
 \setmainfont{Source Sans Pro}
 \setmonofont{Cascadia Code}
 \usepackage{tcolorbox}
+\usepackage{csquotes}
 
 % Definition der Boxen
 \newtcolorbox{tipbox}{
@@ -255,20 +257,73 @@ Die Anwendung läuft auf einem Webserver in einer eigenen containerisierten Dock
 Sie wird rund um die Uhr laufen, mit Ausnahme von Wartungsarbeiten.
 
 \chapter{Produktübersicht}
+\section{Katalog- und Kategoriestruktur}
+\begin{itemize}
+	\item \textbf{Hierarchie:} Die Produkte sind in Kategorien und Unterkategorien gruppiert, z.~B. \enquote{Elektronik $\rightarrow$ Bauteile $\rightarrow$ Widerstände}
+	\item \textbf{Filterfunktionen:} Kunden können Produkte nach Merkmalen, wie Preis, Verfügbarkeit, Marke oder Spezifikationen filtern
+	\item \textbf{Navigation:} Intuitive Benutzerführung erleichtert das Auffinden bestimmter Produkte
+\end{itemize}
+\section{Produktdetails auf einen Blick}
+\begin{itemize}
+	\item \textbf{Produktname:} Klar und eindeutig, idealerweise mit Artikelnummer
+	\item \textbf{Kurzbeschreibung:} Wichtige Eigenschaften oder Anwendungsbereiche des Produkts
+	\item \textbf{Bilder}
+	\item \textbf{Preisangaben:} Nettopreise für B2B, ggf. Staffelpreise oder Rabatte
+	\item \textbf{Verfügbarkeitsstatus:} Angaben zum Lagerbeständen oder Lieferzeiten
+\end{itemize}
+\section{Technische Daten und Spezifikationen}
+\begin{itemize}
+	\item Für B2B-Kunden sind detaillierte technische Informationen oft entscheidend (z.~B. Material, Abmessungen, Zertifizierungen)
+	\item Datenblätter oder technische Zeichnungen zum Herunterladen
+\end{itemize}
+\section{Individuelle Kundenanforderungen}
+\begin{itemize}
+	\item \textbf{Personalisierte Preise:} Preise auf Basis von Kundenverträgen oder Mengenrabatten
+	\item \textbf{Bestellhistorie:} Möglichkeit, bereits gekaufte Produkte erneut zu bestellen
+	\item \textbf{Vergleichsfunktionen:} Direkter Vergleich mehrerer Produkte
+\end{itemize}
+\section{Interaktive und UX-Elemente}
+\begin{itemize}
+	\item \textbf{Responsive Design:} Optimierung für verschiedene Geräte bzw. Oberflächen
+	\item \textbf{Schnellsuche:} Vorschläge und Autovervollständigung bei Eingabe von Suchbegriffen
+	\item \textbf{API-Integration:} Erlaubt Kunden, die Produktdaten direkt in ihre internen Systeme zu integrieren
+\end{itemize}
 
 \chapter{Detaillierte Produktfunktionen}
 \section{User Stories}
+Scrum-Board auf \url{https://tree.taiga.io/project/ssptzk-b2b-webshop}
 \section{Funktionale Anforderungen}
 \section{Nicht-funktionale Anforderungen}
 
 \chapter{Produktdaten}
+
 \chapter{Systemarchitektur}
+\begin{itemize}
+	\item Systemdiagramm erstellen
+	\item Beschreibung Microservices
+	\item Übersicht Technologien, Frameworks, Tools
+\end{itemize}
+
 \chapter{Datenmodell}
+\begin{itemize}
+	\item Beschreibung Datenstruktur und deren Beziehung (ER-Diagramm erstellen)
+	\item Datenbanktabellen beschreiben, Felder der Tables
+\end{itemize}
+
 \chapter{Schnittstellendefinition (API)}
+Detaillierte Aufstellung der APIs mit URI, Eingabe- sowie Ausgabeparameter
+
 \chapter{Benutzungsoberflächen}
+\begin{itemize}
+	\item Erläuterung nach welchen Richtlinien wir uns richten
+	\item Mockups einfügen
+	\item Verwendete Farben, Schriften, Layout etc.
+\end{itemize}
 
 \chapter{Projektorganisation}
 \section{Projektmethodik}
+Beschreibung, wieso nach agiler Methode (Scrum) vorgegangen wird
 \section{Rollenverteilung}
+Rollenverteilung aufzeigen
 
 \end{document}
