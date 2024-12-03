@@ -74,59 +74,185 @@ Beschreibung des Projektziels:
 
 \section{Musskriterien}
 	\subsection{Allgemeine Anforderungen}
-		\subsubsection{Benutzerverwaltung}
-			Rollenbasierte Verwaltung:
-			\begin{itemize}
-				\item Administrator (alle Rechte, Pflege des Artikelkatalogs)
-				\item Interne Mitarbeiter (eingeschränkte Rechte)
-				\item Externe Kunden (Anlegen/Pflegen von Accounts, ggf. Sperren)
-			\end{itemize}
-		\subsubsection{Artikelsuche und Anzeige}
-			\begin{itemize}
-				\item Katalog zur Suche
-				\item semantische Suche
-			\end{itemize}
-		\subsubsection{Bestellprozess}
+	\begin{enumerate}
+		\item Benutzerverwaltung
+
+		Rollenbasierte Verwaltung:
+		\begin{itemize}
+			\item Administrator (alle Rechte, Pflege des Artikelkatalogs)
+			\item Interne Mitarbeiter (eingeschränkte Rechte)
+			\item Externe Kunden (Anlegen/Pflegen von Accounts, ggf. Sperren)
+		\end{itemize}
+		\item Artikelsuche und Anzeige
+		\begin{itemize}
+			\item Katalog zur Suche
+			\item semantische Suche
+		\end{itemize}
+		\item Bestellprozess
 		\begin{itemize}
 			\item Implementierung eines rudimentären Prozesses für Bestellungen
 		\end{itemize}
-		\subsubsection{KI-Komponente}
+		\item KI-Komponente
 		\begin{itemize}
 			\item für Produktempfehlungen oder kundenspezifische Preisfestlegung
 		\end{itemize}
-		\subsubsection{Aufgabenaufteilung}
+		\item Aufgabenaufteilung
 		\begin{itemize}
 			\item Entwurf sinnvoller Use-Cases, Datenmodelle und Software-Architekturkomponenten
 		\end{itemize}
-		\subsubsection{Meilensteine}
+		\item Meilensteine
 		\begin{itemize}
 			\item Definition von Projektmeilensteinen und Kommunikation bei Abweichungen
 		\end{itemize}
-		\subsubsection{Software-Engineering-Prinzipien}
+		\item Software-Engineering-Prinzipien
 		\begin{itemize}
 			\item Anwendung von Kern- und Unterstützungsprozessen des Software-Engineering
 			\item Einhaltung gängiger Namenskonventionen (z.~B. CamelCase, Methodennamen als Verben)
 		\end{itemize}
-		\subsubsection{Dokumentation}
+		\item Dokumentation
 		\begin{itemize}
 			\item Angemessene und fortlaufende Dokumentation, einschließlich Programmcodes
 		\end{itemize}
-		\subsubsection{Projektmanagement}
+		\item Projektmanagement
 		\begin{itemize}
 			\item Regelmäßige Fortschrittsmitteilungen (z.~B. via E-Mail und in einem Log)
 		\end{itemize}
-
-\subsection{Technische Anforderungen}
-\subsection{Entwicklungsprozess}
-\subsection{Präsentation und Abgabe}
+	\end{enumerate}
+	\subsection{Technische Anforderungen}
+	\begin{enumerate}
+		\item Frontend
+		\begin{itemize}
+			\item Web-Oberfläche basierend auf \texttt{HTML5/5.2}
+			\item Optimierung für mobile Endgeräte (\textit{mobile first})
+		\end{itemize}
+		\item Backend
+		\begin{itemize}
+			\item Serverbasierte Implementierung (Java-Servlet/JSP oder PHP)
+		\end{itemize}
+		\item Datenbank
+		\begin{itemize}
+			\item Cloud-/Server-Anwendung auf Basis einer Datenbank
+			\item Verwaltung und Nutzung ausschließlich über die Web-Oberfläche
+		\end{itemize}
+		\item Rollenmanagement
+		\begin{itemize}
+			\item Definition und Implementierung mehrerer sinnvoller Rollen
+		\end{itemize}
+	\end{enumerate}
+	\subsection{Entwicklungsprozess}
+	Agile Softwareentwicklung mit:
+	\begin{itemize}
+		\item Anforderungsanalyse
+		\item Entwurf
+		\item Implementierung
+		\item Test und Dokumentation
+	\end{itemize}
+	\subsection{Präsentation und Abgabe}
+	\begin{itemize}
+		\item Präsentation des Prototyps im Plenum mit klarer Aufgabenverteilung innerhalb der Gruppe
+		\item Abgabe eines funktionsfähigen Prototyps inklusive Dokumentation
+	\end{itemize}
 
 \section{Wunschkriterien}
+	\subsection{Allgemeine Anforderungen}
+	\begin{enumerate}
+		\item Benutzerverwaltung
+		\begin{enumerate}
+			\item Individuelle Preisgestaltung für Kundengruppen
+			\item mehrere Benutzerkonten pro Unternehmen (z.~B. je Abteilung)
+			\item individuelle Dashboards mit relevanten Informationen
+			\item automatische Rabatte für Stammkunden basierend auf Kaufhistorie
+			\item Zwei-Faktor-Authentifizierung für erhöhte Sicherheit
+		\end{enumerate}
+		\item Artikelsuche und Anzeige
+		\begin{enumerate}
+			\item Erweiterte Filterfunktionen (z.~B. nach Energieeffizienz, Preis, Marke)
+			\item Produktvergleichsfunktionen für technische Spezifikationen
+		\end{enumerate}
+		\item Bestellprozess
+		\begin{enumerate}
+			\item Unterstützung mehrerer Warenkörbe für verschiedene Projekte oder Abteilungen
+			\item Automatisierung wiederkehrender Bestellungen durch Abo-Modelle
+			\item Mengenrabatte, die automatisch im Warenkorb berechnet werden
+		\end{enumerate}
+		\item KI-Komponente
+		\begin{enumerate}
+			\item KI-gestützte Produktempfehlungen basierend auf Trends und Kaufhistorie
+			\item KI-gestützter Chatbot für häufige Kundenanfragen (FAQ)
+		\end{enumerate}
+	\end{enumerate}
+	\subsection{Technische Anforderungen}
+	\begin{enumerate}
+		\item Frontend
+		\begin{enumerate}
+			\item Dark-Mode-Unterstützung für augenschonende Bedienung
+			\item Responsive Design für optimale Darstellung auf allen Endgeräten
+			\item Drag-and-Drop-Funktion für die Verwaltung von Warenkörben
+		\end{enumerate}
+		\item Backend
+		\begin{enumerate}
+			\item API-Schnittstelle für ERP- und Einkaufssysteme
+			\item Automatische Synchronisierung von Lagerbeständen
+			\item Verwaltung individueller Preise und Rabatte
+			\item Unterstützung zeitlich begrenzter Aktionen
+			\item Logging- und Monitoring-Tools für Fehleranalyse
+		\end{enumerate}
+		\item Datenbank
+		\begin{enumerate}
+			\item Speicherung des Nutzerverhaltens für Produktempfehlungen
+			\item Versionierung von Produktdaten für Nachvollziehbarkeit
+			\item Volltextsuche für schnelle Suchergebnisse
+			\item Automatisierte Backups und Wiederherstellung
+		\end{enumerate}
+		\item Rollenmanagement
+		\begin{enumerate}
+			\item Granulare Rechteverwaltung für Benutzerrollen
+			\item Unterschiedliche Zugriffsrechte für Preise und Funktionen
+			\item Rollenbasierte Anpassung sichtbarer Daten
+			\item Audit-Logs zur Nachverfolgung von Aktionen
+			\item Dynamische Erweiterung und Anpassung von Rollen
+		\end{enumerate}
+	\end{enumerate}
 \section{Abgrenzungskriterien}
+\begin{enumerate}
+	\item Funktionale Abgrenzungen:
+	\begin{enumerate}
+		\item \textbf{Umfang des Produktangebots:} Der Shop beschränkt sich auf Hardwareprodukte, keine Dienstleistungen.
+		\item \textbf{Kein Marktplatzmodell:} Der Shop dient nicht als Plattform für andere Anbieter.
+	\end{enumerate}
+	\item Technische Abgrenzungen:
+	\begin{enumerate}
+		\item \textbf{Keine mobile Anwendung:} Es wird keine App entwickelt. Der Shop soll als Webservice genutzt werden.
+		\item \textbf{Keine Mehrsprachigkeit:} Der Shop wird ausschließlich in deutscher Sprache betrieben.
+	\end{enumerate}
+	\item Rechtliche Abgrenzungen:
+	\begin{enumerate}
+		\item \textbf{Keine rechtliche Anpassung für Nicht-EU-Länder:} Der Shop wird nicht an Steuer- und Rechtssysteme außerhalb der EU angepasst.
+	\end{enumerate}
+	\item Gestalterische Anpassung:
+	\begin{enumerate}
+		\item \textbf{Keine vollständige Barrierefreiheit:} Der Shop wird nicht vollständig barrierefrei entwickelt (z.~B. keine Optimierung für Screenreader oder spezielle Kontrasteinstellungen).
+	\end{enumerate}
+\end{enumerate}
 
 \chapter{Produkteinsatz}
 \section{Anwendungsbereich}
+Der Anwendungsbereich des Webshops umfasst den Verkauf von IT-Hardware an Geschäftskunden.
+Die Kunden erhalten Zugang zum Shop und können dort die benötigte Hardware bestellen.
 \section{Zielgruppen}
+Der B2B-Onlineshop für IT-Hardware richtet sich vor allem an drei Hauptzielgruppen:
+IT-Dienstleister, Großunternehmen und Konzerne sowie Reseller.
+\begin{itemize}
+	\item IT-Dienstleister und Systemhäuser benötigen regelmäßig Hardware wie Server, Netzwerktechnik und Speichersysteme für den Aufbau und die Wartung von IT-Infrastrukturen bei ihren Kunden.
+	Diese Zielgruppe verlangt große Bestellmengen, maßgeschneiderte Lösungen und eine zuverlässige Lieferung.
+	\item Große Unternehmen und Konzerne beschaffen IT-Hardware für ihre Mitarbeiter und Abteilungen.
+	Sie benötigen eine breite Produktpalette und einfache Bestellprozesse.
+	\item Reseller hingegen kaufen IT-Produkte in großen Mengen, um sie weiterzuverkaufen.
+	Sie benötigen wettbewerbsfähige Preise, detaillierte Produktinformationen sowie eine effiziente Bestell- und Lieferabwicklung.
+\end{itemize}
 \section{Betriebsbedingungen}
+Die Anwendung läuft auf einem Webserver in einer eigenen containerisierten Docker-Umgebung.
+Sie wird rund um die Uhr laufen, mit Ausnahme von Wartungsarbeiten.
 
 \chapter{Produktübersicht}
 

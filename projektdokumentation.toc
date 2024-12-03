@@ -3,35 +3,28 @@
 \contentsline {chapter}{\numberline {1}Zielsetzung}{5}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Musskriterien}{5}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Allgemeine Anforderungen}{5}{subsection.1.1.1}%
-\contentsline {subsubsection}{\nonumberline Benutzerverwaltung}{5}{subsubsection*.3}%
-\contentsline {subsubsection}{\nonumberline Artikelsuche und Anzeige}{5}{subsubsection*.5}%
-\contentsline {subsubsection}{\nonumberline Bestellprozess}{5}{subsubsection*.7}%
-\contentsline {subsubsection}{\nonumberline KI-Komponente}{5}{subsubsection*.9}%
-\contentsline {subsubsection}{\nonumberline Aufgabenaufteilung}{5}{subsubsection*.11}%
-\contentsline {subsubsection}{\nonumberline Meilensteine}{6}{subsubsection*.13}%
-\contentsline {subsubsection}{\nonumberline Software-Engineering-Prinzipien}{6}{subsubsection*.15}%
-\contentsline {subsubsection}{\nonumberline Dokumentation}{6}{subsubsection*.17}%
-\contentsline {subsubsection}{\nonumberline Projektmanagement}{6}{subsubsection*.19}%
 \contentsline {subsection}{\numberline {1.1.2}Technische Anforderungen}{6}{subsection.1.1.2}%
 \contentsline {subsection}{\numberline {1.1.3}Entwicklungsprozess}{6}{subsection.1.1.3}%
 \contentsline {subsection}{\numberline {1.1.4}Präsentation und Abgabe}{6}{subsection.1.1.4}%
-\contentsline {section}{\numberline {1.2}Wunschkriterien}{6}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Abgrenzungskriterien}{6}{section.1.3}%
-\contentsline {chapter}{\numberline {2}Produkteinsatz}{7}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Anwendungsbereich}{7}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Zielgruppen}{7}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Betriebsbedingungen}{7}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Produktübersicht}{9}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Detaillierte Produktfunktionen}{11}{chapter.4}%
-\contentsline {section}{\numberline {4.1}User Stories}{11}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Funktionale Anforderungen}{11}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Nicht-funktionale Anforderungen}{11}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Produktdaten}{13}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Systemarchitektur}{15}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Datenmodell}{17}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Schnittstellendefinition (API)}{19}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Benutzungsoberflächen}{21}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Projektorganisation}{23}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Projektmethodik}{23}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Rollenverteilung}{23}{section.10.2}%
+\contentsline {section}{\numberline {1.2}Wunschkriterien}{7}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Allgemeine Anforderungen}{7}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Technische Anforderungen}{7}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Abgrenzungskriterien}{8}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Produkteinsatz}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Anwendungsbereich}{9}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Zielgruppen}{9}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Betriebsbedingungen}{9}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Produktübersicht}{11}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Detaillierte Produktfunktionen}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}User Stories}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Funktionale Anforderungen}{13}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Nicht-funktionale Anforderungen}{13}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Produktdaten}{15}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Systemarchitektur}{17}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Datenmodell}{19}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Schnittstellendefinition (API)}{21}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Benutzungsoberflächen}{23}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Projektorganisation}{25}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Projektmethodik}{25}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Rollenverteilung}{25}{section.10.2}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

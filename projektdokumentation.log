@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.11.27)  3 DEC 2024 18:36
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.11.27)  3 DEC 2024 19:38
  restricted system commands enabled.
 **projektdokumentation.tex
 (./projektdokumentation.tex
@@ -1109,38 +1109,56 @@ t line 66.
 ]
 chapter 1.
 
+Overfull \hbox (25.66083pt too wide) in paragraph at lines 101--102
+[]\TU/SourceSansPro(0)/m/n/12 Ent-wurf sinn-vol-ler Use-Cases, Da-ten-mo-del-le und Software-Architekturkomponenten 
+ []
+
+
 
 [5]
-Overfull \hbox (3.86888pt too wide) in paragraph at lines 108--109
-[]\TU/SourceSansPro(0)/m/n/12 Ein-hal-tung gän-gi-ger Na-mens-kon-ven-tio-nen 
-(z. B. Ca-mel-Ca-se, Me-tho-den-na-men als Ver-
+Overfull \hbox (1.15689pt too wide) in paragraph at lines 114--115
+[]\TU/SourceSansPro(0)/m/n/12 An-ge-mes-se-ne und fort-lau-fen-de Do-ku-men-ta-t
+i-on, ein-schließ-lich Pro-gramm-codes 
  []
 
 
 
 [6]
+
+[7]
+Overfull \hbox (13.9329pt too wide) in paragraph at lines 230--231
+[]\TU/SourceSansPro(0)/b/n/12 Kei-ne recht-li-che An-pas-sung für Nicht-EU-L
+änder: \TU/SourceSansPro(0)/m/n/12 Der Shop wird nicht an Steuer-
+ []
+
+
+
+[8]
 chapter 2.
 
+Overfull \hbox (18.16884pt too wide) in paragraph at lines 246--248
+\TU/SourceSansPro(0)/m/n/12 werk-tech-nik und Spei-cher-sys-te-me für den Auf-b
+au und die War-tung von IT-Infrastrukturen
+ []
 
-[7
+
+Overfull \hbox (24.8888pt too wide) in paragraph at lines 254--256
+\TU/SourceSansPro(0)/m/n/12 Die An-wen-dung läuft auf ei-nem Web-ser-ver in ei-
+ner ei-ge-nen con-tai-ne-ri-sier-ten Docker-Umgebung.
+ []
+
+
+
+[9
 
 
 ]
-
-[8
-
-
-]
-chapter 3.
-
-
-[9]
 
 [10
 
 
 ]
-chapter 4.
+chapter 3.
 
 
 [11]
@@ -1149,7 +1167,7 @@ chapter 4.
 
 
 ]
-chapter 5.
+chapter 4.
 
 
 [13]
@@ -1158,7 +1176,7 @@ chapter 5.
 
 
 ]
-chapter 6.
+chapter 5.
 
 
 [15]
@@ -1167,7 +1185,7 @@ chapter 6.
 
 
 ]
-chapter 7.
+chapter 6.
 
 
 [17]
@@ -1176,7 +1194,7 @@ chapter 7.
 
 
 ]
-chapter 8.
+chapter 7.
 
 
 [19]
@@ -1185,7 +1203,7 @@ chapter 8.
 
 
 ]
-chapter 9.
+chapter 8.
 
 
 [21]
@@ -1194,11 +1212,20 @@ chapter 9.
 
 
 ]
-chapter 10.
+chapter 9.
 
 
 [23]
-runsystem(latexminted cleantemp  --timestamp 20241203183659 7B13D03722AE4FDBFAB8
+
+[24
+
+
+]
+chapter 10.
+
+
+[25]
+runsystem(latexminted cleantemp  --timestamp 20241203193828 7B13D03722AE4FDBFAB8
 18D67106C9B5)...executed.
  (./projektdokumentation.aux)
  ***********
@@ -1210,24 +1237,25 @@ Package rerunfilecheck Info: File `projektdokumentation.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 32053 strings out of 475630
+ 32094 strings out of 475630
  100000,1648299 words of node,token memory allocated
- 513 words of node memory still in use:
-   4 hlist, 1 vlist, 1 rule, 5 glue, 3 kern, 1 glyph, 9 attribute, 60 glue_spec,
+ 508 words of node memory still in use:
+   4 hlist, 1 vlist, 1 rule, 5 glue, 3 kern, 1 glyph, 9 attribute, 59 glue_spec,
  6 attribute_list, 2 write nodes
-   avail lists: 1:2,2:1393,3:379,4:162,5:356,6:80,7:2270,8:1,9:429,10:8,11:270
- 54226 multiletter control sequences out of 65536+600000
- 64 fonts using 12520455 bytes
- 108i,8n,102p,10935b,463s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSansPro-Reg
-ularIt.otf><c:/texlive/2024/texmf-dist/fonts/opentype/adobe/sourcesanspro/Source
-SansPro-Bold.otf><c:/texlive/2024/texmf-dist/fonts/opentype/adobe/sourcesanspro/
-SourceSansPro-Regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/l
-msans10-bold.otf>
-Output written on projektdokumentation.pdf (23 pages, 32374 bytes).
+   avail lists: 1:2,2:1489,3:405,4:170,5:745,6:86,7:4106,8:1,9:461,10:8,11:511
+ 54221 multiletter control sequences out of 65536+600000
+ 65 fonts using 13032623 bytes
+ 108i,8n,102p,10935b,568s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/opentype/public/cascadia-code/CascadiaCode-Reg
+ular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSa
+nsPro-RegularIt.otf><c:/texlive/2024/texmf-dist/fonts/opentype/adobe/sourcesansp
+ro/SourceSansPro-Bold.otf><c:/texlive/2024/texmf-dist/fonts/opentype/adobe/sourc
+esanspro/SourceSansPro-Regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/pu
+blic/lm/lmsans10-bold.otf>
+Output written on projektdokumentation.pdf (25 pages, 44059 bytes).
 
-PDF statistics: 291 PDF objects out of 1000 (max. 8388607)
- 251 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 131072)
- 224 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 360 PDF objects out of 1000 (max. 8388607)
+ 314 compressed objects within 4 object streams
+ 115 named destinations out of 1000 (max. 131072)
+ 240 words of extra memory for PDF output out of 10000 (max. 100000000)
 
