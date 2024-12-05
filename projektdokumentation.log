@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.11.27)  5 DEC 2024 16:25
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.11.27)  5 DEC 2024 16:29
  restricted system commands enabled.
 **projektdokumentation.tex
 (./projektdokumentation.tex
@@ -1151,7 +1151,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [5]
 chapter 1.
 
-Overfull \hbox (1.44882pt too wide) in paragraph at lines 119--120
+Overfull \hbox (2.48492pt too wide) in paragraph at lines 114--118
+\TU/SourceSansPro(0)/m/n/12 son-dern auch die Zu-frie-den-heit und Ef-fi-zi-enz der Ge-sch
+äfts-kun-den nach-hal-tig zu stei-gern. 
+ []
+
+
+Overfull \hbox (1.44882pt too wide) in paragraph at lines 126--127
 []\TU/SourceSansPro(0)/m/n/12 Pro-duk-te kön-nen über ei-ne Such-funk-ti-on mi
 t Fil-ter-mög-lich-kei-ten ge-zielt ge-fil-tert wer-
  []
@@ -1162,7 +1168,7 @@ t Fil-ter-mög-lich-kei-ten ge-zielt ge-fil-tert wer-
 
 
 ]
-Overfull \hbox (2.76085pt too wide) in paragraph at lines 136--137
+Overfull \hbox (2.76085pt too wide) in paragraph at lines 143--144
 []\TU/SourceSansPro(0)/m/n/12 Der Kun-de muss in mi-ni-ma-len Schrit-ten zum er-
 folg-rei-chen Kauf-ab-schluss ge-führt wer-
  []
@@ -1172,14 +1178,14 @@ folg-rei-chen Kauf-ab-schluss ge-führt wer-
 [7]
 
 [8]
-Overfull \hbox (8.61687pt too wide) in paragraph at lines 207--208
+Overfull \hbox (8.61687pt too wide) in paragraph at lines 214--215
 []\TU/SourceSansPro(0)/m/n/12 KI-gestützte Pro-dukt-emp-feh-lun-gen ba-sie-ren auf Wunsch-lis-ten, Kauf-his-to-ri-en oder neu-
  []
 
 
 
 [9]
-Overfull \hbox (13.9329pt too wide) in paragraph at lines 232--233
+Overfull \hbox (13.9329pt too wide) in paragraph at lines 239--240
 []\TU/SourceSansPro(0)/b/n/12 Kei-ne recht-li-che An-pas-sung für Nicht-EU-L
 änder: \TU/SourceSansPro(0)/m/n/12 Der Shop wird nicht an Steuer-
  []
@@ -1189,13 +1195,13 @@ Overfull \hbox (13.9329pt too wide) in paragraph at lines 232--233
 [10]
 chapter 2.
 
-Overfull \hbox (18.16884pt too wide) in paragraph at lines 248--250
+Overfull \hbox (18.16884pt too wide) in paragraph at lines 255--257
 \TU/SourceSansPro(0)/m/n/12 werk-tech-nik und Spei-cher-sys-te-me für den Auf-b
 au und die War-tung von IT-Infrastrukturen
  []
 
 
-Overfull \hbox (24.8888pt too wide) in paragraph at lines 256--258
+Overfull \hbox (24.8888pt too wide) in paragraph at lines 263--265
 \TU/SourceSansPro(0)/m/n/12 Die An-wen-dung läuft auf ei-nem Web-ser-ver in ei-
 ner ei-ge-nen con-tai-ne-ri-sier-ten Docker-Umgebung.
  []
@@ -1208,14 +1214,14 @@ ner ei-ge-nen con-tai-ne-ri-sier-ten Docker-Umgebung.
 ]
 chapter 3.
 
-Overfull \hbox (6.00491pt too wide) in paragraph at lines 275--276
+Overfull \hbox (6.00491pt too wide) in paragraph at lines 282--283
 []\TU/SourceSansPro(0)/b/n/12 Hier-ar-chie: \TU/SourceSansPro(0)/m/n/12 Die Pro-
 duk-te sind in Ka-te-go-rien und Un-ter-ka-te-go-rien grup-piert, z. B. „  Ele
 k-
  []
 
 
-Overfull \hbox (0.34494pt too wide) in paragraph at lines 282--283
+Overfull \hbox (0.34494pt too wide) in paragraph at lines 289--290
 []\TU/SourceSansPro(0)/b/n/12 Kurz-be-schrei-bung: \TU/SourceSansPro(0)/m/n/12 
 Wich-ti-ge Ei-gen-schaf-ten oder An-wen-dungs-be-rei-che des Pro-dukts 
  []
@@ -1230,7 +1236,7 @@ Wich-ti-ge Ei-gen-schaf-ten oder An-wen-dungs-be-rei-che des Pro-dukts
 [13]
 chapter 4.
 
-Overfull \hbox (24.23752pt too wide) in paragraph at lines 316--317
+Overfull \hbox (24.23752pt too wide) in paragraph at lines 323--324
 []\TU/SourceSansPro(0)/m/n/12 Sie-he Kap 4 - []$\TU/CascadiaCode(0)/m/n/12 https
 ://www.ibr.cs.tu-[]bs.de/courses/ss07/sep-[]cm/templates/
  []
@@ -1287,7 +1293,7 @@ chapter 10.
 ]
 chapter 11.
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--411
+Underfull \hbox (badness 10000) in paragraph at lines 409--418
 
  []
 
@@ -1311,7 +1317,7 @@ chapter 13.
 
 
 ]
-runsystem(latexminted cleantemp  --timestamp 20241205162529 7B13D03722AE4FDBFAB8
+runsystem(latexminted cleantemp  --timestamp 20241205162911 7B13D03722AE4FDBFAB8
 18D67106C9B5)...executed.
  (./projektdokumentation.aux)
  ***********
@@ -1328,7 +1334,7 @@ Here is how much of LuaTeX's memory you used:
  515 words of node memory still in use:
    4 hlist, 1 vlist, 1 rule, 5 glue, 3 kern, 1 glyph, 11 attribute, 58 glue_spec
 , 7 attribute_list, 2 write, 1 pdf_action nodes
-   avail lists: 1:2,2:1403,3:374,4:166,5:757,6:78,7:4034,8:75,9:415,10:8,11:496
+   avail lists: 1:2,2:1403,3:374,4:166,5:734,6:78,7:3927,8:75,9:415,10:8,11:477
  54844 multiletter control sequences out of 65536+600000
  62 fonts using 13939687 bytes
  108i,8n,102p,10935b,628s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1339,7 +1345,7 @@ nsPro-RegularIt.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmsans1
 SansPro-Bold.otf><c:/texlive/2024/texmf-dist/fonts/opentype/adobe/sourcesanspro/
 SourceSansPro-Regular.otf><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy10.pfb>
-Output written on projektdokumentation.pdf (24 pages, 72004 bytes).
+Output written on projektdokumentation.pdf (24 pages, 72005 bytes).
 
 PDF statistics: 320 PDF objects out of 1000 (max. 8388607)
  273 compressed objects within 3 object streams
