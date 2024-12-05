@@ -13,6 +13,7 @@
 \setmonofont{Cascadia Code}
 \usepackage{tcolorbox}
 \usepackage{csquotes}
+\usepackage{setspace}
 
 % Definition der Boxen
 \newtcolorbox{tipbox}{
@@ -41,10 +42,45 @@
 
 \title{Pflichtenheft}
 \subtitle{Konzeption und prototypische Implementierung eines B2B-Webshops}
+
+
 \author{WI22A-AKI}
 
+
 \begin{document}
-\maketitle
+%\maketitle
+
+\begin{titlepage}
+	\centering
+	% Logo hinzufügen 
+	\includegraphics[width=0.5\textwidth]{Media/dhbwlogo.png}\vspace{1cm}
+	
+	{\large Projektkonzeption und -realisierung\par}
+	\vspace{0.5cm}
+	{\Large\bfseries Konzeption und prototypische Implementierung eines B2B-Webshops\par}
+	\vspace{1.5cm}
+	
+%	{\Huge \texttt{\MakeUppercase{Pflichtenheft}}}\par
+	{\Huge \textbf{Pflichtenheft}\par}
+	\vspace{2cm}
+	
+	\doublespacing
+	{\large \textbf{Wintersemester 2024 }\par}
+	\textbf{Semester:} 5\\
+	\textbf{Kurs:} WI22A-AKI
+	
+	\vspace{2cm}
+	
+	{\large\textbf{Betreuer:}\par}
+	{\large Prof. Dr. Alexandros Nanopoulos} \\
+	{\large Prof. Dr. Dirk Palleduhn}
+	
+	\vfill
+			
+	Mosbach, den \today  %TODO
+	
+\end{titlepage}
+
 
 \section{Projektteilnehmer}
 \begin{tabular}{l|l|l}
@@ -68,153 +104,116 @@
 \tableofcontents
 
 \chapter{Zielsetzung}
-Beschreibung des Projektziels:
-\begin{itemize}
-	\item Warum wird das Projekt durchgeführt?
-	\item Welche Probleme sollen gelöst werden?
-\end{itemize}
+	Der \textbf{Hot Hardware Hub} ist ein fiktives Unternehmen, das im Rahmen dieses Projekts gegründet wurde, um hochwertige und moderne IT-Hardware speziell für Geschäftskunden (B2B) anzubieten. Ziel ist es, einen innovativen Webshop zu entwickeln, der es Unternehmen ermöglicht, ihre benötigte Hardware schnell, einfach und bequem online zu bestellen.
+	Im Mittelpunkt des Systems steht das Ziel, den Kunden ein erstklassiges Einkaufserlebnis zu bieten. Eine intuitive Benutzeroberfläche sowie ein klar strukturierter und gut durchsuchbarer Produktkatalog ermöglichen es den Nutzern, mit nur wenigen Klicks die passenden Produkte zu finden und ihre Bestellungen mühelos abzuschließen.
+	Die Systementwicklung reagiert auf die wachsende Nachfrage nach digitalen Beschaffungslösungen im IT-Bereich. Viele Unternehmen suchen nach effizienten Möglichkeiten, hochwertige Hardware zeitnah und unkompliziert zu erwerben. Der Webshop des \textbf{Hot Hardware Hub} stellt hierfür eine zuverlässige und benutzerfreundliche Plattform bereit, die die IT-Beschaffung deutlich erleichtert. Das Ziel ist es, nicht nur Zeit und Aufwand zu sparen, sondern auch die Zufriedenheit und Effizienz der Geschäftskunden nachhaltig zu steigern.
 
 \section{Musskriterien}
-	\subsection{Allgemeine Anforderungen}
-	\begin{enumerate}
-		\item Benutzerverwaltung
-
-		Rollenbasierte Verwaltung:
-		\begin{itemize}
-			\item Administrator (alle Rechte, Pflege des Artikelkatalogs)
-			\item Interne Mitarbeiter (eingeschränkte Rechte)
-			\item Externe Kunden (Anlegen/Pflegen von Accounts, ggf. Sperren)
-		\end{itemize}
-		\item Artikelsuche und Anzeige
-		\begin{itemize}
-			\item Katalog zur Suche
-			\item semantische Suche
-		\end{itemize}
-		\item Bestellprozess
-		\begin{itemize}
-			\item Implementierung eines rudimentären Prozesses für Bestellungen
-		\end{itemize}
-		\item KI-Komponente
-		\begin{itemize}
-			\item für Produktempfehlungen oder kundenspezifische Preisfestlegung
-		\end{itemize}
-		\item Aufgabenaufteilung
-		\begin{itemize}
-			\item Entwurf sinnvoller Use-Cases, Datenmodelle und Software-Architekturkomponenten
-		\end{itemize}
-		\item Meilensteine
-		\begin{itemize}
-			\item Definition von Projektmeilensteinen und Kommunikation bei Abweichungen
-		\end{itemize}
-		\item Software-Engineering-Prinzipien
-		\begin{itemize}
-			\item Anwendung von Kern- und Unterstützungsprozessen des Software-Engineering
-			\item Einhaltung gängiger Namenskonventionen (z.~B. CamelCase, Methodennamen als Verben)
-		\end{itemize}
-		\item Dokumentation
-		\begin{itemize}
-			\item Angemessene und fortlaufende Dokumentation, einschließlich Programmcodes
-		\end{itemize}
-		\item Projektmanagement
-		\begin{itemize}
-			\item Regelmäßige Fortschrittsmitteilungen (z.~B. via E-Mail und in einem Log)
-		\end{itemize}
-	\end{enumerate}
-	\subsection{Technische Anforderungen}
-	\begin{enumerate}
-		\item Frontend
-		\begin{itemize}
-			\item Web-Oberfläche basierend auf \texttt{HTML5/5.2}
-			\item Optimierung für mobile Endgeräte (\textit{mobile first})
-		\end{itemize}
-		\item Backend
-		\begin{itemize}
-			\item Serverbasierte Implementierung (Java-Servlet/JSP oder PHP)
-		\end{itemize}
-		\item Datenbank
-		\begin{itemize}
-			\item Cloud-/Server-Anwendung auf Basis einer Datenbank
-			\item Verwaltung und Nutzung ausschließlich über die Web-Oberfläche
-		\end{itemize}
-		\item Rollenmanagement
-		\begin{itemize}
-			\item Definition und Implementierung mehrerer sinnvoller Rollen
-		\end{itemize}
-	\end{enumerate}
-	\subsection{Entwicklungsprozess}
-	Agile Softwareentwicklung mit:
+	\vspace{0.5cm}
+	\textbf{Produktkatalog}
 	\begin{itemize}
-		\item Anforderungsanalyse
-		\item Entwurf
-		\item Implementierung
-		\item Test und Dokumentation
+		\item Kunden können den Produktkatalog mit der IT-Hardware einsehen.
+		\item Produkte werden in Kategorien darstellbar angezeigt.
+		\item Produkte müssen die wesentlichen Merkmale (Preis, Menge, Warenbestand und Produktdetails) dem Kunden sichtbar machen.
+		\item Produkte können über eine Suchfunktion mit Filtermöglichkeiten gezielt gefiltert werden.
 	\end{itemize}
-	\subsection{Präsentation und Abgabe}
+	
+	\vspace{0.5cm}
+	\textbf{Benutzerverwaltung}
 	\begin{itemize}
-		\item Präsentation des Prototyps im Plenum mit klarer Aufgabenverteilung innerhalb der Gruppe
-		\item Abgabe eines funktionsfähigen Prototyps inklusive Dokumentation
+		\item Kunden müssen sich registrieren und sich mit ihren Daten anmelden können.
+		\item Kunden müssen ihre Benutzerdaten einsehen und verändern können.
+		\item Kunden müssen ihr Konto deaktivieren bzw. löschen können.
+		\item Der Anmeldeprozess im Webshop muss mit einer sicheren Authentifizierungsmethode gestaltet werden.
+	\end{itemize}
+	
+	\vspace{0.5cm}
+	\textbf{Bestellprozess}
+	\begin{itemize}
+		\item Kunden müssen ihre Produkte in den Warenkorb legen und diesen einsehen können.
+		\item Der Kunde muss eine Bestellübersicht vor dem finalen Abschluss sehen.
+		\item Der Kunde muss in minimalen Schritten zum erfolgreichen Kaufabschluss geführt werden.
+		\item Kunden müssen im Kundenbereich getätigte Bestellungen und deren Status einsehen können.
+	\end{itemize}
+	
+	\vspace{0.5cm}
+	\textbf{Zahlung und Rechnungsstellung}
+	\begin{itemize}
+		\item Dem Kunden müssen gängige Zahlungsmethoden verfügbar gemacht werden (z.B. Rechnung).
+		\item Der Kunde muss nach erfolgreichem Abschluss eine Rechnung per E-Mail erhalten oder diese im Kundenbereich einsehen können.
+	\end{itemize}
+	
+	\vspace{0.5cm}
+	\textbf{Shop-Betreiber}
+	\begin{itemize}
+		\item Die Admins können Produkte und zugehörige Daten über ein Dashboard erstellen, bearbeiten und löschen.
+		\item Die Shop-Betreiber können Produktbilder und -dokumente an die Produktseiten verknüpfen.
+	\end{itemize}
+	
+	\vspace{0.5cm}
+	\textbf{KI-Komponente}
+	\begin{itemize}
+		\item Es soll eine KI-Komponente eingebettet werden, die dem Kunden beim Einkauf per Chat behilflich ist.
+		\item Über eine ML-Komponente soll erreicht werden, dass Kundenpreise individuell rabattiert werden, je nach Einkaufsvolumen bzw. -verhalten.
+	\end{itemize}
+	
+	\vspace{0.5cm}
+	\textbf{Technische Aspekte}
+	\begin{itemize}
+		\item Der Webshop soll plattformunabhängig von den gängigsten Geräten aufgerufen werden können.
+		\item Der Webshop soll Anfragen schnell abarbeiten und schnell erreichbar sein.
+		\item Die Webapplikation soll eine intuitive Bedienung aufweisen.
+		\item Der B2B-Shop soll durch steigende Produktmengen schnell skalierbar sein.
 	\end{itemize}
 
 \section{Wunschkriterien}
-	\subsection{Allgemeine Anforderungen}
-	\begin{enumerate}
-		\item Benutzerverwaltung
-		\begin{enumerate}
-			\item Individuelle Preisgestaltung für Kundengruppen
-			\item mehrere Benutzerkonten pro Unternehmen (z.~B. je Abteilung)
-			\item individuelle Dashboards mit relevanten Informationen
-			\item automatische Rabatte für Stammkunden basierend auf Kaufhistorie
-			\item Zwei-Faktor-Authentifizierung für erhöhte Sicherheit
-		\end{enumerate}
-		\item Artikelsuche und Anzeige
-		\begin{enumerate}
-			\item Erweiterte Filterfunktionen (z.~B. nach Energieeffizienz, Preis, Marke)
-			\item Produktvergleichsfunktionen für technische Spezifikationen
-		\end{enumerate}
-		\item Bestellprozess
-		\begin{enumerate}
-			\item Unterstützung mehrerer Warenkörbe für verschiedene Projekte oder Abteilungen
-			\item Automatisierung wiederkehrender Bestellungen durch Abo-Modelle
-			\item Mengenrabatte, die automatisch im Warenkorb berechnet werden
-		\end{enumerate}
-		\item KI-Komponente
-		\begin{enumerate}
-			\item KI-gestützte Produktempfehlungen basierend auf Trends und Kaufhistorie
-			\item KI-gestützter Chatbot für häufige Kundenanfragen (FAQ)
-		\end{enumerate}
-	\end{enumerate}
-	\subsection{Technische Anforderungen}
-	\begin{enumerate}
-		\item Frontend
-		\begin{enumerate}
-			\item Dark-Mode-Unterstützung für augenschonende Bedienung
-			\item Responsive Design für optimale Darstellung auf allen Endgeräten
-			\item Drag-and-Drop-Funktion für die Verwaltung von Warenkörben
-		\end{enumerate}
-		\item Backend
-		\begin{enumerate}
-			\item API-Schnittstelle für ERP- und Einkaufssysteme
-			\item Automatische Synchronisierung von Lagerbeständen
-			\item Verwaltung individueller Preise und Rabatte
-			\item Unterstützung zeitlich begrenzter Aktionen
-			\item Logging- und Monitoring-Tools für Fehleranalyse
-		\end{enumerate}
-		\item Datenbank
-		\begin{enumerate}
-			\item Speicherung des Nutzerverhaltens für Produktempfehlungen
-			\item Versionierung von Produktdaten für Nachvollziehbarkeit
-			\item Volltextsuche für schnelle Suchergebnisse
-			\item Automatisierte Backups und Wiederherstellung
-		\end{enumerate}
-		\item Rollenmanagement
-		\begin{enumerate}
-			\item Granulare Rechteverwaltung für Benutzerrollen
-			\item Unterschiedliche Zugriffsrechte für Preise und Funktionen
-			\item Rollenbasierte Anpassung sichtbarer Daten
-			\item Audit-Logs zur Nachverfolgung von Aktionen
-			\item Dynamische Erweiterung und Anpassung von Rollen
-		\end{enumerate}
-	\end{enumerate}
+	\vspace{0.5cm}
+	\textbf{Benutzerverwaltung}
+	\begin{itemize}
+		\item Es soll ermöglicht werden, dass eine eigene Einkaufsgruppe für einen gewissen Kundenkreis erstellt werden kann.
+		\item Der Kunde soll mehr als nur einen Warenkorb anlegen, befüllen und speichern können.
+		\item Mehrere Benutzerkonten oder -gruppen für ein Unternehmen sollen unterstützt werden.
+		\item Kennzahlen für einen gewissen Kunden bzw. für eine Einkaufsgruppe sollen bereitgestellt werden.
+		\item Zwei-Faktor-Authentifizierung oder eine No-Password-Authentication soll dem Kunden ermöglicht werden.
+	\end{itemize}
+	
+	\vspace{0.5cm}
+	\textbf{Produktkatalog}
+	\begin{itemize}
+		\item Kundenbenachrichtigungen bei wieder verfügbaren Artikeln.
+		\item Eine noch detailliertere Filterfunktion bei der Produktsuche.
+		\item Produktvergleich-Funktion zwischen zwei oder mehreren Produkten.
+		\item Zeitlich begrenzte Aktionen oder individuelle Coupons.
+	\end{itemize}
+	
+	\vspace{0.5cm}
+	\textbf{Sicherheitsaspekte}
+	\begin{itemize}
+		\item Das System soll alle Aspekte der DSGVO einhalten.
+		\item Es sollte eine Datenverschlüsselung gemäß State-of-the-art verwendet werden.
+	\end{itemize}
+	
+	\vspace{0.5cm}
+	\textbf{Bestellprozess}
+	\begin{itemize}
+		\item Ein wiederkehrendes Bestellmodell soll angeboten werden.
+		\item Individuelle Mengenrabatte je nach Menge oder Einkaufsvolumen in einem bestimmten definierten Zeitraum.
+	\end{itemize}
+	
+	\vspace{0.5cm}
+	\textbf{KI-Komponente}
+	\begin{itemize}
+		\item KI-gestützte Produktempfehlungen basieren auf Wunschlisten, Kaufhistorien oder neuen Artikeln im Sortiment.
+	\end{itemize}
+	
+	\vspace{0.5cm}
+	\textbf{Technische Aspekte}
+	\begin{itemize}
+		\item Darstellung von Daten wie Traffic, Besucheranzahl und Kundenaktionen in einem Dashboard für die Shopbetreiber.
+		\item Logging und Monitoring des Webshops.
+	\end{itemize}	
+	
+	
 \section{Abgrenzungskriterien}
 \begin{enumerate}
 	\item Funktionale Abgrenzungen:
@@ -257,6 +256,19 @@ Die Anwendung läuft auf einem Webserver in einer eigenen containerisierten Dock
 Sie wird rund um die Uhr laufen, mit Ausnahme von Wartungsarbeiten.
 
 \chapter{Produktübersicht}
+%TODO
+Einbetten der Use-Case-Diagramme mit den diversen Akteuren (Akteursbeschreibung für Kunde, Shopmitarbeiter, Admins) 
+
+Ggf. Produktfunktionen anhand des Diagramms einbetten und dann untergliedern und mit Literalen/Ziffern zur besseren untergliederung versehen -
+Beispiel: 
+
+F.1 Produktkatalog
+F1.1 Kunde kann Produktkatalog ansehen
+F1.2 Kunden kann im Produktkatalog nach Suchkriterien suchen
+F1.3 Kunde kann per Filterfunktion gewisse Artikel ausblenden/einblenden
+F1.4 Kunde kann gezielt ein Produkt in der Detailansicht öffnen
+
+
 \section{Katalog- und Kategoriestruktur}
 \begin{itemize}
 	\item \textbf{Hierarchie:} Die Produkte sind in Kategorien und Unterkategorien gruppiert, z.~B. \enquote{Elektronik $\rightarrow$ Bauteile $\rightarrow$ Widerstände}
@@ -291,11 +303,76 @@ Sie wird rund um die Uhr laufen, mit Ausnahme von Wartungsarbeiten.
 
 \chapter{Detaillierte Produktfunktionen}
 \section{User Stories}
-Scrum-Board auf \url{https://tree.taiga.io/project/ssptzk-b2b-webshop}
+Statt doppelter Dokumentation, nur auf das Scrum-Board verweisen: \\
+\url{https://tree.taiga.io/project/ssptzk-b2b-webshop}
+\newline
+%TODO
+Bedarf einer Abklärung mit den Betreuern am Freitag 05.12.2024
+
 \section{Funktionale Anforderungen}
-\section{Nicht-funktionale Anforderungen}
+Eingliederung in Geschäftsfälle gängige Praxis, siehe Beispiele in Discord
+
+Siehe Kap 4 - \url{https://www.ibr.cs.tu-bs.de/courses/ss07/sep-cm/templates/pflichtenheft.pdf}
+
 
 \chapter{Produktdaten}
+\textbf{Beispiel} \\
+Artikeldaten (max. 50):\\
+Bezeichnung, eine kurze Beschreibung, eine ausführliche Beschreibung, Preise
+/D10/
+(Einkaufspreis beim Hersteller, empfohlener Verkaufspreis des Herstellers,
+tatsächlicher Verkaufspreis im Markt), weitere Herstellerinformationen (u.U.
+komplexes Datum)
+Bestandsdaten (max. 500):\\
+im Markt zum Verkauf zur Verfügung stehende Anzahl der Artikel des Warenkatalogs,
+/D20/
+Produktanzahlen in den Einkaufskörben der Kunden, Anzahlen der bestellten Artikel in
+den ausstehenden Lieferungen
+/D30/ Personaldaten (max. 50):\\
+Name, Vorname, Einstellungsdatum, Einsatz-(Aufgaben-)bereich, Gehalt
+/D40/ Kundendaten (max. 50):\\
+Name, Vorname, Lieferadresse für externe Lieferungen (komplexes Datum), bisheriges
+Einkaufsvolumen zur Berechnung des Treuerabattes, sein Einkaufskorb (wenn er im
+Markt ist) (komplexes Datum)
+
+\chapter{Qualitätsanforderung}
+In diesem Kapitel wird festgelegt, welche Qualitätsmerkmale das zu entwickelnde Produkt in
+welcher Qualitätsstufe besitzen soll. Vorraussetzung ist, dass Qualitätsmerkmale in
+operationalisierter Form vorliegen. Die operationalisierten Qualitätsmerkmale sind als
+Anhang dem Pflichtenheft beizufügen, falls sie nicht als allgemeine Richtlinie (z. B. Standard,
+Norm) zur Verfügung gestellt werden können.
+
+Als Beispiel folgende Kriterien:
+
+\begin{itemize}
+	\item Funktionalität
+	\item Angemessenheit 
+	\item Richtigkeit 
+	\item Interoperabilität 
+	\item Ordnungsmäßigkeit 
+	\item Sicherheit 
+	\item Zuverlässigkeit
+	\item Reife 
+	\item Fehlertoleranz 
+	\item Wiederherstellbarkeit 
+	\item Benutzbarkeit
+	\item Verständlichkeit 
+	\item Erlernbarkeit 
+	\item Bedienbarkeit 
+	\item Effizienz
+	\item Zeitverhalten 
+	\item Verbrauchsverhalten 
+	\item Änderbarkeit
+	\item Analysierbarkeit 
+	\item Modifizierbarkeit 
+	\item Stabilität 
+	\item Prüfbarkeit 
+	\item Übertragbarkeit
+	\item Anpassbarkeit 
+	\item Installierbarkeit 
+	\item Konformität 
+	\item Austauschbarkeit
+\end{itemize}
 
 \chapter{Systemarchitektur}
 \begin{itemize}
@@ -320,10 +397,45 @@ Detaillierte Aufstellung der APIs mit URI, Eingabe- sowie Ausgabeparameter
 	\item Verwendete Farben, Schriften, Layout etc.
 \end{itemize}
 
+\chapter{Nicht-funktionale Anforderungen}
+Es werden alle Anforderungen aufgeführt, die sich nicht auf die Funktionalität, die Leistung
+und die Benutzeroberfläche beziehen.
+Bitte die Darstellung gemäß Beispiel verwenden.\\
+Beispiele:\\
+/NF10/ Das Produkt soll plattformunabhängig sein \\
+/NF20/ Das Produkt muss anwenderfreundlich sein (intuitive Bedienbarkeit für Benutzer ohne\\
+EDV-Vorkenntnisse, umfangreiche Hilfefunktion)
+/NF30/ Das Produkt muss mit geringem Aufwand weiterentwickelbar und wartbar sein\\
+/NF40 / Die Produkt soll fehlertolerant bezüglich Bedien- und Eingabefehler sein\\
+
+
+\chapter{Technische Produktumgebung}
+%TODO
+In diesem Kapitel wird die technische Umgebung des Produktes beschrieben. Bei Client /
+Server - Anwendungen ist die Umgebung jeweils für Client und Server getrennt anzugeben.
+10.1 Software\\
+Hier wird angegeben, welche Softwaresysteme (z. B. Betriebssystem, Datenbank,
+Fenstersystem, usw.) zur Verfügung stehen.\\
+Beispiel:
+Server-Betriebssystem: Linux.
+Client-Betriebssystem: Windows XP oder Browser (für Fernwartung).
+10.2 Hardware \\
+Hier werden die Hardware Komponenten (z. B. CPU, Peripherie) in minimaler und maximaler
+Konfiguration aufgeführt, die für den Produkteinsatz vorgesehen sind.
+Beispiel:\\
+Server: PC
+Client: PC und browserfähiges Gerät mit Grafikbildschirm (für Fernwartung).
+10.3 Orgware\\
+Hier wird aufgeführt, unter welchen organisatorischen Randbedingungen bzw.
+Voraussetzungen das Produkt eingesetzt werden soll.
+Beispiel:\\
+Netzwerkverbindung des Servers zum Computersystem der Testmaschinen, von dem die
+Abmeldung der Reifen nach durchgeführtem Testlauf kommt.
+
 \chapter{Projektorganisation}
 \section{Projektmethodik}
 Beschreibung, wieso nach agiler Methode (Scrum) vorgegangen wird
 \section{Rollenverteilung}
-Rollenverteilung aufzeigen
+Rollenverteilung innerhalb des Projektes mit Verantwortlichkeiten darstellen
 
 \end{document}
