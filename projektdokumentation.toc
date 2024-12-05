@@ -1,0 +1,31 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {0.1}Projektteilnehmer}{2}{section.0.1}%
+\contentsline {chapter}{\numberline {1}Zielsetzung}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Musskriterien}{5}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Wunschkriterien}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Abgrenzungskriterien}{8}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Produkteinsatz}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Anwendungsbereich}{9}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Zielgruppen}{9}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Betriebsbedingungen}{9}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Produktübersicht}{10}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Katalog- und Kategoriestruktur}{10}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Produktdetails auf einen Blick}{10}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Technische Daten und Spezifikationen}{10}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Individuelle Kundenanforderungen}{11}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Interaktive und UX-Elemente}{11}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Detaillierte Produktfunktionen}{12}{chapter.4}%
+\contentsline {section}{\numberline {4.1}User Stories}{12}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Funktionale Anforderungen}{12}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Produktdaten}{13}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Qualitätsanforderung}{14}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Systemarchitektur}{16}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Datenmodell}{17}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Schnittstellendefinition (API)}{18}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Benutzungsoberflächen}{19}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Nicht-funktionale Anforderungen}{20}{chapter.11}%
+\contentsline {chapter}{\numberline {12}Technische Produktumgebung}{21}{chapter.12}%
+\contentsline {chapter}{\numberline {13}Projektorganisation}{22}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Projektmethodik}{22}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Rollenverteilung}{22}{section.13.2}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
