@@ -15,7 +15,8 @@
 \usepackage{tcolorbox}
 \usepackage{csquotes}
 \usepackage{setspace}
-\usepackage{forest}
+\usepackage{cleveref}
+\usepackage{xcolor}
 
 % Definition der Boxen
 \newtcolorbox{tipbox}{
@@ -102,17 +103,39 @@
 \end{tabular}
 
 \section{Organigramm}
-Dieses Kapitel beschreibt die Organisationsstruktur des Projekts B2B-Webshop und stellt die Rollen und Verantwortlichkeiten der Teammitglieder in einem übersichtlichen Organigramm dar.
+Dieses Kapitel beschreibt die Organisationsstruktur des Projekts \textit{B2B-Webshop} und stellt die Rollen und Verantwortlichkeiten der Teammitglieder in einem übersichtlichen Organigramm (siehe \cref{fig:organigramm}) dar.
 Dabei wird zwischen dem Projektleiter und dem Co-Projektleiter unterschieden, die jeweils eigene Teams aus Entwicklern und Fachkräften führen.
+
 Das Organigramm dient als visuelle Orientierungshilfe, um die Aufgabenverteilung und Kommunikationswege im Projekt klar darzustellen.
 Ziel ist es, die Zusammenarbeit zu fördern und sicherzustellen, dass alle Beteiligten ihre Verantwortlichkeiten kennen.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.4\linewidth]{"out/Organigramm B2B-Webshop"}
-	\caption{Organigramm Projektgruppe B2B-Webshop}
-	\label{fig:organigramm-b2b-webshop}
+	\caption{Organigramm der Projektgruppe des B2B-Webshops}
+	\label{fig:organigramm}
 \end{figure}
 
+\section{Teamstruktur}
+Das Kapitel Teamstruktur gibt einen tabellarischen Überblick über die Zuordnung der Teammitglieder zu den zentralen Verantwortungsbereichen des Projekts.
+Die Rollen sind in die Kategorien Organisation, Entwicklung, Solution Architect und User Experience unterteilt (siehe \cref{tab:teamstruktur}).
+
+Die Tabelle verdeutlicht die Zuordnung der Teammitglieder zu ihren jeweiligen Verantwortungsbereichen und unterstreicht die multidisziplinäre Zusammenarbeit innerhalb des Projekts.
+Die Hervorhebung einzelner Mitglieder zeigt deren Führungs- oder Spezialaufgaben, während die klare Struktur die Nachvollziehbarkeit und Effizienz innerhalb des Teams unterstützt.
+\begin{table}
+	\centering
+	\begin{tabular}{l|l|l|l}
+		 \textbf{Organisation}   &    \textbf{Entwicklung}     & \textbf{Solution Architect} & \textbf{User Experience} \\ \hline
+		\textcolor{purple}{Colin Christ} & \textcolor{purple}{Steffen Spatzek} & \textcolor{purple}{Steffen Spatzek} &        Alan Kanjo        \\ \hline
+		     Lukas Tomanek       &          Paul Kunz          &         Alan Kanjo          &      Lukas Tomanek       \\ \hline
+		     David Schreck       &        Timo Swoboda         &          Paul Kunz          &      David Schreck       \\ \hline
+		   Bastian Bamberger     &         Alan Kanjo          &          Luis Väth          &      Julian Strohm       \\ \hline
+		   Milan Jeevakanthan    &        Julian Strohm        &                             &    Bastian Bamberger     \\ \hline
+		       Luis Väth         &        Andreas Denz         &                             &    Milan Jeevakanthan    \\ \hline
+		     Daniel Arnold       &          Noah Weis          &                             &
+	\end{tabular}
+	\caption{Verantwortungsbereiche der Projektmitglieder des B2B-Webshops}
+	\label{tab:teamstruktur}
+\end{table}
 
 \tableofcontents
 
