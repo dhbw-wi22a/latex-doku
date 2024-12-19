@@ -1,0 +1,22 @@
+@startwbs Organigramm B2B-Webshop
+skinparam dpi 300
+skinparam defaultFontName "Arial","Helvetica"
++ B2B-Webshop
+++: Colin Christ
+(Projektleiter);
++++ Lukas Tomanek
++++ Bastian Bamberger
++++ Milan Jeevakanthan
++++ Luis Väth
++++ David Schreck
++++ Daniel Arnold
+++: Steffen Spatzek
+(Co-Projektleiter);
++++ Alan Kanjo
++++ Andreas Denz
++++ Timo Swoboda
++++ Julian Strohm
++++ Paul Kunz
++++ Noah Weis
+
+@endwbs

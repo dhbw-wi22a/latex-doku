@@ -1,5 +1,6 @@
 \babel@toc {ngerman}{}\relax 
-\contentsline {section}{\numberline {0.1}Projektteilnehmer}{3}{section.0.1}%
+\contentsline {section}{\numberline {0.1}Projektteilnehmer}{2}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Organigramm}{2}{section.0.2}%
 \contentsline {chapter}{\numberline {1}Zielsetzung}{6}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Musskriterien}{6}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Wunschkriterien}{8}{section.1.2}%
