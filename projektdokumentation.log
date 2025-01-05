@@ -1,9 +1,9 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.11.27)  19 DEC 2024 18:46
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.1.3)  5 JAN 2025 16:25
  restricted system commands enabled.
 **projektdokumentation.tex
 (./projektdokumentation.tex
 LaTeX2e <2024-11-01> patch level 1
-L3 programming layer <2024-11-02>
+L3 programming layer <2024-12-09>
 Lua module: luaotfload 2024-02-14 v3.28 Lua based OpenType font support
 Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
 Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended 
@@ -209,8 +209,8 @@ File: luatex.def 2024/04/13 v1.2e Graphics/color driver for luatex
 \Gin@req@width=\dimen142
 )
 (c:/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2024/11/08 v24.13 The multilingual framework for pdfLaTeX, LuaLa
-TeX and XeLaTeX
+Package: babel 2025/01/01 v25.1 The multilingual framework for pdfLaTeX, LuaLaT
+eX and XeLaTeX
 
 (c:/texlive/2024/texmf-dist/tex/generic/babel/luababel.def
 \bbl@readstream=\read2
@@ -237,11 +237,11 @@ Package babel Info: Non-standard hyphenation setup on input line 118.
 \bbl@attr@locale=\attribute4
 )
 (c:/texlive/2024/texmf-dist/tex/generic/babel-german/ngerman.ldf
-Language: ngerman 2024/01/19 v2.14 German support for babel (post-1996 orthogra
+Language: ngerman 2024/12/10 v2.15 German support for babel (post-1996 orthogra
 phy)
 
 (c:/texlive/2024/texmf-dist/tex/generic/babel-german/ngermanb.ldf
-Language: ngermanb 2024/01/19 v2.14 German support for babel (post-1996 orthogr
+Language: ngermanb 2024/12/10 v2.15 German support for babel (post-1996 orthogr
 aphy)
 Package babel Info: Making " an active character on input line 122.
 
@@ -271,7 +271,7 @@ Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 
 (c:/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
+Package: iftex 2024/12/12 v1.0g TeX engine tests
 )))
 (c:/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
@@ -500,7 +500,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (c:/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec.sty
 (c:/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 (c:/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2024-11-02 L3 programming layer (loader) 
+Package: expl3 2024-12-09 L3 programming layer (loader) 
 
 (c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
 File: l3backend-luatex.def 2024-05-08 L3 backend support: PDF output (LuaTeX)
@@ -1195,16 +1195,16 @@ Package cleveref Info: loaded `ngerman' language definitions on input line 142.
 
 [5]
 chapter 1.
+<Media/Hot Hardware Hub Logo.png, id=105, 1027.84pt x 1027.84pt>
+File: Media/Hot Hardware Hub Logo.png Graphic file (type png)
+<use Media/Hot Hardware Hub Logo.png>
+Package luatex.def Info: Media/Hot Hardware Hub Logo.png  used on input line 14
+5.
+(luatex.def)             Requested size: 224.06548pt x 224.05527pt.
 
-Overfull \hbox (2.48492pt too wide) in paragraph at lines 149--153
+Overfull \hbox (2.48492pt too wide) in paragraph at lines 155--159
 \TU/SourceSansPro(0)/m/n/12 son-dern auch die Zu-frie-den-heit und Ef-fi-zi-enz der Ge-sch
 äfts-kun-den nach-hal-tig zu stei-gern. 
- []
-
-
-Overfull \hbox (1.44882pt too wide) in paragraph at lines 161--162
-[]\TU/SourceSansPro(0)/m/n/12 Pro-duk-te kön-nen über ei-ne Such-funk-ti-on mi
-t Fil-ter-mög-lich-kei-ten ge-zielt ge-fil-tert wer-
  []
 
 
@@ -1212,49 +1212,55 @@ t Fil-ter-mög-lich-kei-ten ge-zielt ge-fil-tert wer-
 [6
 
 
-]
-Overfull \hbox (2.76085pt too wide) in paragraph at lines 178--179
+<./Media/Hot Hardware Hub Logo.png>]
+Overfull \hbox (1.44882pt too wide) in paragraph at lines 167--168
+[]\TU/SourceSansPro(0)/m/n/12 Pro-duk-te kön-nen über ei-ne Such-funk-ti-on mi
+t Fil-ter-mög-lich-kei-ten ge-zielt ge-fil-tert wer-
+ []
+
+
+Overfull \hbox (2.76085pt too wide) in paragraph at lines 184--185
 []\TU/SourceSansPro(0)/m/n/12 Der Kun-de muss in mi-ni-ma-len Schrit-ten zum er-
 folg-rei-chen Kauf-ab-schluss ge-führt wer-
  []
 
 
 
-Package cleveref Info: loaded `ngerman' language definitions on input line 200.
+Package cleveref Info: loaded `ngerman' language definitions on input line 192.
 
 [7]
 
-Package cleveref Info: loaded `ngerman' language definitions on input line 227.
+Package cleveref Info: loaded `ngerman' language definitions on input line 223.
 
 [8]
-Overfull \hbox (8.61687pt too wide) in paragraph at lines 249--250
+Overfull \hbox (8.61687pt too wide) in paragraph at lines 255--256
 []\TU/SourceSansPro(0)/m/n/12 KI-gestützte Pro-dukt-emp-feh-lun-gen ba-sie-ren auf Wunsch-lis-ten, Kauf-his-to-ri-en oder neu-
  []
 
 
 
-Package cleveref Info: loaded `ngerman' language definitions on input line 265.
+Package cleveref Info: loaded `ngerman' language definitions on input line 256.
 
 [9]
-Overfull \hbox (13.9329pt too wide) in paragraph at lines 274--275
+Overfull \hbox (13.9329pt too wide) in paragraph at lines 280--281
 []\TU/SourceSansPro(0)/b/n/12 Kei-ne recht-li-che An-pas-sung für Nicht-EU-L
 änder: \TU/SourceSansPro(0)/m/n/12 Der Shop wird nicht an Steuer-
  []
 
 
 
-Package cleveref Info: loaded `ngerman' language definitions on input line 282.
+Package cleveref Info: loaded `ngerman' language definitions on input line 288.
 
 [10]
 chapter 2.
 
-Overfull \hbox (18.16884pt too wide) in paragraph at lines 290--292
+Overfull \hbox (18.16884pt too wide) in paragraph at lines 296--298
 \TU/SourceSansPro(0)/m/n/12 werk-tech-nik und Spei-cher-sys-te-me für den Auf-b
 au und die War-tung von IT-Infrastrukturen
  []
 
 
-Overfull \hbox (24.8888pt too wide) in paragraph at lines 298--300
+Overfull \hbox (24.8888pt too wide) in paragraph at lines 304--306
 \TU/SourceSansPro(0)/m/n/12 Die An-wen-dung läuft auf ei-nem Web-ser-ver in ei-
 ner ei-ge-nen con-tai-ne-ri-sier-ten Docker-Umgebung.
  []
@@ -1267,14 +1273,14 @@ ner ei-ge-nen con-tai-ne-ri-sier-ten Docker-Umgebung.
 ]
 chapter 3.
 
-Overfull \hbox (6.00491pt too wide) in paragraph at lines 317--318
+Overfull \hbox (6.00491pt too wide) in paragraph at lines 323--324
 []\TU/SourceSansPro(0)/b/n/12 Hier-ar-chie: \TU/SourceSansPro(0)/m/n/12 Die Pro-
 duk-te sind in Ka-te-go-rien und Un-ter-ka-te-go-rien grup-piert, z. B. „  Ele
 k-
  []
 
 
-Overfull \hbox (0.34494pt too wide) in paragraph at lines 324--325
+Overfull \hbox (0.34494pt too wide) in paragraph at lines 330--331
 []\TU/SourceSansPro(0)/b/n/12 Kurz-be-schrei-bung: \TU/SourceSansPro(0)/m/n/12 
 Wich-ti-ge Ei-gen-schaf-ten oder An-wen-dungs-be-rei-che des Pro-dukts 
  []
@@ -1286,12 +1292,12 @@ Wich-ti-ge Ei-gen-schaf-ten oder An-wen-dungs-be-rei-che des Pro-dukts
 
 ]
 
-Package cleveref Info: loaded `ngerman' language definitions on input line 347.
+Package cleveref Info: loaded `ngerman' language definitions on input line 353.
 
 [13]
 chapter 4.
 
-Overfull \hbox (24.23752pt too wide) in paragraph at lines 358--359
+Overfull \hbox (24.23752pt too wide) in paragraph at lines 364--365
 []\TU/SourceSansPro(0)/m/n/12 Sie-he Kap 4 - []$\TU/CascadiaCode(0)/m/n/12 https
 ://www.ibr.cs.tu-[]bs.de/courses/ss07/sep-[]cm/templates/
  []
@@ -1317,7 +1323,7 @@ chapter 6.
 
 ]
 
-Package cleveref Info: loaded `ngerman' language definitions on input line 420.
+Package cleveref Info: loaded `ngerman' language definitions on input line 426.
 
 [17]
 chapter 7.
@@ -1350,7 +1356,7 @@ chapter 10.
 ]
 chapter 11.
 
-Underfull \hbox (badness 10000) in paragraph at lines 444--453
+Underfull \hbox (badness 10000) in paragraph at lines 450--459
 
  []
 
@@ -1374,27 +1380,27 @@ chapter 13.
 
 
 ]
-runsystem(latexminted cleantemp  --timestamp 20241219184603 7B13D03722AE4FDBFAB8
+runsystem(latexminted cleantemp  --timestamp 20250105162551 7B13D03722AE4FDBFAB8
 18D67106C9B5)...executed.
  (./projektdokumentation.aux
 Package cleveref Info: loaded `ngerman' language definitions on input line 10.
 )
  ***********
 LaTeX2e <2024-11-01> patch level 1
-L3 programming layer <2024-11-02>
+L3 programming layer <2024-12-09>
  ***********
 Package rerunfilecheck Info: File `projektdokumentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 34398 strings out of 475630
+ 34430 strings out of 475554
  100000,1648299 words of node,token memory allocated
  515 words of node memory still in use:
    4 hlist, 1 vlist, 1 rule, 5 glue, 3 kern, 1 glyph, 11 attribute, 58 glue_spec
 , 7 attribute_list, 2 write, 1 pdf_action nodes
    avail lists: 2:1448,3:388,4:166,5:789,6:81,7:5099,8:75,9:435,10:8,11:538
- 56540 multiletter control sequences out of 65536+600000
+ 56644 multiletter control sequences out of 65536+600000
  62 fonts using 13940007 bytes
  108i,9n,102p,10935b,928s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/opentype/public/cascadia-code/CascadiaCode-Reg
@@ -1404,10 +1410,10 @@ nsPro-RegularIt.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmsans1
 SansPro-Bold.otf><c:/texlive/2024/texmf-dist/fonts/opentype/adobe/sourcesanspro/
 SourceSansPro-Regular.otf><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy10.pfb>
-Output written on projektdokumentation.pdf (24 pages, 134959 bytes).
+Output written on projektdokumentation.pdf (24 pages, 1808716 bytes).
 
-PDF statistics: 336 PDF objects out of 1000 (max. 8388607)
- 288 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 131072)
+PDF statistics: 338 PDF objects out of 1000 (max. 8388607)
+ 289 compressed objects within 3 object streams
+ 70 named destinations out of 1000 (max. 131072)
  264 words of extra memory for PDF output out of 10000 (max. 100000000)
 

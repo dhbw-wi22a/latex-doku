@@ -3,9 +3,9 @@
 \contentsline {section}{\numberline {0.2}Organigramm}{2}{section.0.2}%
 \contentsline {section}{\numberline {0.3}Teamstruktur}{2}{section.0.3}%
 \contentsline {chapter}{\numberline {1}Zielsetzung}{6}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Musskriterien}{6}{section.1.1}%
+\contentsline {section}{\numberline {1.1}Musskriterien}{7}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Wunschkriterien}{8}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Abgrenzungskriterien}{9}{section.1.3}%
+\contentsline {section}{\numberline {1.3}Abgrenzungskriterien}{10}{section.1.3}%
 \contentsline {chapter}{\numberline {2}Produkteinsatz}{11}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Anwendungsbereich}{11}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Zielgruppen}{11}{section.2.2}%
