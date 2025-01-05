@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.1.3)  5 JAN 2025 16:25
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.1.3)  5 JAN 2025 16:28
  restricted system commands enabled.
 **projektdokumentation.tex
 (./projektdokumentation.tex
@@ -1202,12 +1202,6 @@ Package luatex.def Info: Media/Hot Hardware Hub Logo.png  used on input line 14
 5.
 (luatex.def)             Requested size: 224.06548pt x 224.05527pt.
 
-Overfull \hbox (2.48492pt too wide) in paragraph at lines 155--159
-\TU/SourceSansPro(0)/m/n/12 son-dern auch die Zu-frie-den-heit und Ef-fi-zi-enz der Ge-sch
-äfts-kun-den nach-hal-tig zu stei-gern. 
- []
-
-
 
 [6
 
@@ -1380,7 +1374,7 @@ chapter 13.
 
 
 ]
-runsystem(latexminted cleantemp  --timestamp 20250105162551 7B13D03722AE4FDBFAB8
+runsystem(latexminted cleantemp  --timestamp 20250105162853 7B13D03722AE4FDBFAB8
 18D67106C9B5)...executed.
  (./projektdokumentation.aux
 Package cleveref Info: loaded `ngerman' language definitions on input line 10.
@@ -1410,7 +1404,7 @@ nsPro-RegularIt.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmsans1
 SansPro-Bold.otf><c:/texlive/2024/texmf-dist/fonts/opentype/adobe/sourcesanspro/
 SourceSansPro-Regular.otf><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy10.pfb>
-Output written on projektdokumentation.pdf (24 pages, 1808716 bytes).
+Output written on projektdokumentation.pdf (24 pages, 1808703 bytes).
 
 PDF statistics: 338 PDF objects out of 1000 (max. 8388607)
  289 compressed objects within 3 object streams
