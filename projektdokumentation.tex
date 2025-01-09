@@ -17,6 +17,24 @@
 \usepackage{setspace}
 \usepackage{cleveref}
 \usepackage{xcolor}
+\usepackage{listings}
+\usepackage{longtable}
+
+\definecolor{lightgray}{gray}{0.95}
+
+\lstdefinelanguage{json}{
+	basicstyle=\ttfamily\small,
+	numbers=left,
+	numberstyle=\scriptsize,
+	stepnumber=1,
+	numbersep=8pt,
+	backgroundcolor=\color{lightgray},
+	showspaces=false,
+	showstringspaces=false,
+	breaklines=true,   % Automatischer Zeilenumbruch
+	frame=single,      % Rahmen um Listings
+	captionpos=b       % Caption unter dem Listing
+}
 
 % Definition der Boxen
 \newtcolorbox{tipbox}{
@@ -121,7 +139,7 @@ Die Rollen sind in die Kategorien Organisation, Entwicklung, Solution Architect 
 
 Die Tabelle verdeutlicht die Zuordnung der Teammitglieder zu ihren jeweiligen Verantwortungsbereichen und unterstreicht die multidisziplinäre Zusammenarbeit innerhalb des Projekts.
 Die Hervorhebung einzelner Mitglieder zeigt deren Führungs- oder Spezialaufgaben, während die klare Struktur die Nachvollziehbarkeit und Effizienz innerhalb des Teams unterstützt.
-\begin{table}
+\begin{table}[H]
 	\centering
 	\begin{tabular}{l|l|l|l}
 		 \textbf{Organisation}   &    \textbf{Entwicklung}     & \textbf{Solution Architect} & \textbf{User Experience} \\ \hline
@@ -437,7 +455,92 @@ Als Beispiel folgende Kriterien:
 \end{itemize}
 
 \chapter{Schnittstellendefinition (API)}
-Detaillierte Aufstellung der APIs mit URI, Eingabe- sowie Ausgabeparameter
+
+%\begin{longtable}{|l|l|p{6cm}|p{6cm}|}
+\begin{longtable}{|l|l|l|l|}
+	\hline
+	\textbf{Methode} & \textbf{API-Endpunkt} & \textbf{Übergebene Daten (Request)} & \textbf{Antwort (Response)} \\
+	\hline
+	POST & /web/api/auth/register/ & \ref{lst:register-request} & \ref{lst:register-response} \\
+	\hline
+	POST & /web/api/auth/login/ & \ref{lst:login-request} & \ref{lst:login-response} \\
+	\hline
+	POST & /web/api/auth/refresh/ & \ref{lst:refresh-request} & \ref{lst:refresh-response} \\
+	\hline
+	GET & /web/api/me/profile/ & - & \ref{lst:profile-response} \\
+	\hline
+	POST & /web/api/me/orders/ & \ref{lst:order-request} & \ref{lst:order-response} \\
+	\hline
+	\caption{API-Schnittstellendokumentation des HotHardwareHub-Shops}
+	\label{tab:api_docs}
+\end{longtable}
+
+\begin{lstlisting}[language=json, caption={Request für Registrierung}, label=lst:register-request]
+	{
+		"email": "test@example.com",
+		"password": "securepassword",
+		"password_confirm": "securepassword"
+	}
+\end{lstlisting}
+
+\begin{lstlisting}[language=json, caption={Response für Registrierung}, label=lst:register-response]
+	{
+		"email": "test@example.com"
+	}
+\end{lstlisting}
+
+\begin{lstlisting}[language=json, caption={Request für Login}, label=lst:login-request]
+	{
+		"email": "test@example.com",
+		"password": "securepassword"
+	}
+\end{lstlisting}
+
+\begin{lstlisting}[language=json, caption={Response für Login}, label=lst:login-response]
+	{
+		"access": "JWT_ACCESS_TOKEN",
+		"refresh": "JWT_REFRESH_TOKEN"
+	}
+\end{lstlisting}
+
+\begin{lstlisting}[language=json, caption={Request für Token Refresh}, label=lst:refresh-request]
+	{
+		"refresh": "JWT_REFRESH_TOKEN"
+	}
+\end{lstlisting}
+
+\begin{lstlisting}[language=json, caption={Response für Token Refresh}, label=lst:refresh-response]
+	{
+		"access": "NEW_JWT_ACCESS_TOKEN"
+	}
+\end{lstlisting}
+
+\begin{lstlisting}[language=json, caption={Response für Profilabruf}, label=lst:profile-response]
+	{
+		"email": "test@example.com",
+		"company_identifier": "12345",
+		"company_name": "Tech Corp"
+	}
+\end{lstlisting}
+
+\begin{lstlisting}[language=json, caption={Request für Bestellungen}, label=lst:order-request]
+	{
+		"order_info": {
+			"buyer_name": "Max Mustermann"
+		},
+		"items": [
+		{ "item_id": 1, "quantity": 2 }
+		]
+	}
+\end{lstlisting}
+
+\begin{lstlisting}[language=json, caption={Response für Bestellungen}, label=lst:order-response]
+	{
+		"order_id": 11,
+		"order_status": "pending",
+		"order_total": 49.99
+	}
+\end{lstlisting}
 
 \chapter{Benutzungsoberflächen}
 \begin{itemize}
