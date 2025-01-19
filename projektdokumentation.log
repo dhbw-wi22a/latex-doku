@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.1.19)  19 JAN 2025 23:36
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.1.19)  20 JAN 2025 00:37
  restricted system commands enabled.
  file:line:error style messages enabled.
 **"c:/Users/colin/OneDrive - lehre.mosbach.dhbw.de/Studienjahr 3/Projektkonzeption und realisierung/LaTeX Dokumentation/projektdokumentation.tex"
@@ -928,20 +928,20 @@ Package luatex.def Info: Media/dhbwlogo.png  used on input line 77.
 
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<./Media/dhbwlogo.png>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 105.
+(Font)              <12> on input line 107.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 105.
+(Font)              <8> on input line 107.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 105.
+(Font)              <6> on input line 107.
 <out/Organigramm B2B-Webshop.png, id=17, 1235.61626pt x 1361.085pt>
 File: out/Organigramm B2B-Webshop.png Graphic file (type png)
 <use out/Organigramm B2B-Webshop.png>
-Package luatex.def Info: out/Organigramm B2B-Webshop.png  used on input line 131.
+Package luatex.def Info: out/Organigramm B2B-Webshop.png  used on input line 136.
 (luatex.def)             Requested size: 179.24963pt x 197.44572pt.
 
 
 LaTeX Font Info:    Font shape `TU/xcharter(0)/m/sl' in size <12> not available
-(Font)              Font shape `TU/xcharter(0)/m/it' tried instead on input line 157.
+(Font)              Font shape `TU/xcharter(0)/m/it' tried instead on input line 162.
 [2]
 
 [3<./out/Organigramm B2B-Webshop.png>] (./projektdokumentation.toc
@@ -960,10 +960,10 @@ LaTeX Font Info:    Font shape `TU/xcharter(0)/bx/n' in size <12> not available
 
 [5]
 chapter 1.
-<Media/Hot Hardware Hub Logo.png, id=105, 1027.84pt x 1027.84pt>
+<Media/Hot Hardware Hub Logo.png, id=106, 1027.84pt x 1027.84pt>
 File: Media/Hot Hardware Hub Logo.png Graphic file (type png)
 <use Media/Hot Hardware Hub Logo.png>
-Package luatex.def Info: Media/Hot Hardware Hub Logo.png  used on input line 163.
+Package luatex.def Info: Media/Hot Hardware Hub Logo.png  used on input line 168.
 (luatex.def)             Requested size: 224.06548pt x 224.05527pt.
 
 
@@ -973,7 +973,7 @@ Package luatex.def Info: Media/Hot Hardware Hub Logo.png  used on input line 163
 <./Media/Hot Hardware Hub Logo.png>]
 
 [7]
-Overfull \hbox (5.241pt too wide) in paragraph at lines 209--210
+Overfull \hbox (5.241pt too wide) in paragraph at lines 214--215
 []\TU/xcharter(0)/m/n/12 Dem Kun-den müs-sen gän-gi-ge Zah-lungs-me-tho-den ver-füg-bar ge-macht wer-den (z. B.
  []
 
@@ -982,7 +982,7 @@ Overfull \hbox (5.241pt too wide) in paragraph at lines 209--210
 [8]
 
 [9]
-Overfull \hbox (0.26103pt too wide) in paragraph at lines 273--274
+Overfull \hbox (0.26103pt too wide) in paragraph at lines 278--279
 []\TU/xcharter(0)/m/n/12 KI-gestützte Pro-dukt-emp-feh-lun-gen ba-sie-ren auf Wunsch-lis-ten, Kauf-his-to-ri-en oder
  []
 
@@ -1005,7 +1005,7 @@ chapter 3.
 
 
 ]
-Overfull \hbox (0.94498pt too wide) in paragraph at lines 355--356
+Overfull \hbox (0.94498pt too wide) in paragraph at lines 360--361
 []\TU/xcharter(0)/m/n/12 Für B2B-Kunden sind de-tail-lier-te tech-ni-sche In-for-ma-tio-nen oft ent-schei-dend (z. B.
  []
 
@@ -1014,7 +1014,7 @@ Overfull \hbox (0.94498pt too wide) in paragraph at lines 355--356
 [14]
 chapter 4.
 
-Overfull \hbox (28.30554pt too wide) in paragraph at lines 381--382
+Overfull \hbox (28.30554pt too wide) in paragraph at lines 386--387
 []\TU/xcharter(0)/m/n/12 Sie-he Kap 4 - []$\TU/CascadiaCode(0)/m/n/12 https://www.ibr.cs.tu-[]bs.de/courses/ss07/sep-[]cm/templates/
  []
 
@@ -1056,7 +1056,7 @@ chapter 8.
 ]
 chapter 9.
 
-Overfull \hbox (48.75304pt too wide) in alignment at lines 459--475
+Overfull \hbox (48.75304pt too wide) in alignment at lines 464--480
  [][][][] 
  []
 
@@ -1096,7 +1096,7 @@ chapter 13.
 
 
 ]
-runsystem(latexminted cleantemp  --timestamp 20250119233658 7B13D03722AE4FDBFAB818D67106C9B5)...executed.
+runsystem(latexminted cleantemp  --timestamp 20250120003756 7B13D03722AE4FDBFAB818D67106C9B5)...executed.
  (./projektdokumentation.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
@@ -1107,19 +1107,19 @@ Package rerunfilecheck Info: File `projektdokumentation.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 35835 strings out of 475518
+ 35838 strings out of 475518
  156270,1977958 words of node,token memory allocated
  498 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 6 attribute, 63 glue_spec, 6 attribute_list, 2 write, 1 pdf_action nodes
-   avail lists: 1:3,2:2163,3:389,4:2636,5:2734,6:81,7:5452,8:77,9:6966,10:15,11:520
- 58001 multiletter control sequences out of 65536+600000
+   avail lists: 2:2163,3:390,4:2636,5:2734,6:83,7:5581,8:75,9:6966,10:15,11:532
+ 58003 multiletter control sequences out of 65536+600000
  64 fonts using 19186487 bytes
  108i,9n,102p,11054b,786s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/opentype/public/cascadia-code/CascadiaCode-Regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/xcharter/XCharter-Italic.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/xcharter/XCharter-Bold.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/xcharter/XCharter-Roman.otf><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on projektdokumentation.pdf (26 pages, 1821811 bytes).
+Output written on projektdokumentation.pdf (26 pages, 1821893 bytes).
 
-PDF statistics: 412 PDF objects out of 1000 (max. 8388607)
- 356 compressed objects within 4 object streams
- 122 named destinations out of 1000 (max. 131072)
+PDF statistics: 413 PDF objects out of 1000 (max. 8388607)
+ 357 compressed objects within 4 object streams
+ 123 named destinations out of 1000 (max. 131072)
  264 words of extra memory for PDF output out of 10000 (max. 100000000)
 
