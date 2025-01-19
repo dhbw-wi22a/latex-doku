@@ -1,0 +1,3 @@
+[submodule "project_models_diagrams"]
+	path = project_models_diagrams
+	url = https://github.com/dhbw-wi22a/project_models_diagrams.git
