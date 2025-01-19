@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.1.19)  19 JAN 2025 23:25
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.1.19)  19 JAN 2025 23:31
  restricted system commands enabled.
  file:line:error style messages enabled.
 **"c:/Users/colin/OneDrive - lehre.mosbach.dhbw.de/Studienjahr 3/Projektkonzeption und realisierung/LaTeX Dokumentation/projektdokumentation.tex"
@@ -980,11 +980,6 @@ Overfull \hbox (5.241pt too wide) in paragraph at lines 209--210
 
 
 [8]
-Overfull \hbox (10.05301pt too wide) in paragraph at lines 244--245
-[]\TU/xcharter(0)/m/n/12 Zwei-Faktor-Authentifizierung oder ei-ne No-Password-Authentication soll dem Kun-
- []
-
-
 
 [9]
 Overfull \hbox (0.26103pt too wide) in paragraph at lines 273--274
@@ -1106,7 +1101,7 @@ chapter 13.
 
 
 ]
-runsystem(latexminted cleantemp  --timestamp 20250119232509 7B13D03722AE4FDBFAB818D67106C9B5)...executed.
+runsystem(latexminted cleantemp  --timestamp 20250119233144 7B13D03722AE4FDBFAB818D67106C9B5)...executed.
  (./projektdokumentation.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
@@ -1126,7 +1121,7 @@ Here is how much of LuaTeX's memory you used:
  64 fonts using 19186487 bytes
  108i,9n,102p,11054b,786s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/opentype/public/cascadia-code/CascadiaCode-Regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/xcharter/XCharter-Italic.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/xcharter/XCharter-Bold.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/xcharter/XCharter-Roman.otf><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on projektdokumentation.pdf (26 pages, 1822033 bytes).
+Output written on projektdokumentation.pdf (26 pages, 1822048 bytes).
 
 PDF statistics: 412 PDF objects out of 1000 (max. 8388607)
  356 compressed objects within 4 object streams
