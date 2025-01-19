@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.1.19)  19 JAN 2025 23:31
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.1.19)  19 JAN 2025 23:36
  restricted system commands enabled.
  file:line:error style messages enabled.
 **"c:/Users/colin/OneDrive - lehre.mosbach.dhbw.de/Studienjahr 3/Projektkonzeption und realisierung/LaTeX Dokumentation/projektdokumentation.tex"
@@ -1077,11 +1077,6 @@ chapter 10.
 ]
 chapter 11.
 
-Underfull \hbox (badness 10000) in paragraph at lines 552--561
-
- []
-
-
 
 [24
 
@@ -1101,7 +1096,7 @@ chapter 13.
 
 
 ]
-runsystem(latexminted cleantemp  --timestamp 20250119233144 7B13D03722AE4FDBFAB818D67106C9B5)...executed.
+runsystem(latexminted cleantemp  --timestamp 20250119233658 7B13D03722AE4FDBFAB818D67106C9B5)...executed.
  (./projektdokumentation.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
@@ -1112,16 +1107,16 @@ Package rerunfilecheck Info: File `projektdokumentation.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 35833 strings out of 475518
+ 35835 strings out of 475518
  156270,1977958 words of node,token memory allocated
  498 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 6 attribute, 63 glue_spec, 6 attribute_list, 2 write, 1 pdf_action nodes
-   avail lists: 1:3,2:2163,3:389,4:2636,5:2733,6:81,7:5452,8:77,9:6966,10:15,11:520
- 57999 multiletter control sequences out of 65536+600000
+   avail lists: 1:3,2:2163,3:389,4:2636,5:2734,6:81,7:5452,8:77,9:6966,10:15,11:520
+ 58001 multiletter control sequences out of 65536+600000
  64 fonts using 19186487 bytes
  108i,9n,102p,11054b,786s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/opentype/public/cascadia-code/CascadiaCode-Regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/xcharter/XCharter-Italic.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/xcharter/XCharter-Bold.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/xcharter/XCharter-Roman.otf><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on projektdokumentation.pdf (26 pages, 1822048 bytes).
+Output written on projektdokumentation.pdf (26 pages, 1821811 bytes).
 
 PDF statistics: 412 PDF objects out of 1000 (max. 8388607)
  356 compressed objects within 4 object streams
