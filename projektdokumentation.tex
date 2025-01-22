@@ -19,6 +19,7 @@
 \usepackage{listings}
 \usepackage{longtable}
 \usepackage{enumitem}
+\usepackage{tabularx}
 
 \definecolor{lightgray}{gray}{0.95}
 
@@ -584,6 +585,89 @@ Voraussetzungen das Produkt eingesetzt werden soll.
 Beispiel:\\
 Netzwerkverbindung des Servers zum Computersystem der Testmaschinen, von dem die
 Abmeldung der Reifen nach durchgeführtem Testlauf kommt.
+
+\chapter{KI-Konzeption}
+\section{Idee}
+Für den Webshop soll ein Chatbot erstellt werden. 
+Dieser soll Fragen der Kunden beantworten, um die Kundenzufriedenheit zu erhöhen.
+\section{Zielgruppenanalyse}
+Der KI-Chatbot richtet sich vor allem an IT-Einkäufer, die nach Produkten mit bestimmten technischen Spezifikationen suchen und einzelne Produkte schnell vergleichen wollen.
+\section{Funktionen und Anwendungsfälle}
+Produktberatung:
+\begin{itemize}
+	\item Empfehlung geeigneter Produkte auf Basis von Kundenanforderungen (z.~B. \enquote{Ich suche einen Monitor mit mindestens 24 Zoll})
+	\item Produktvergleiche (z.~B. \enquote{Was sind die Unterschiede zwischen Laptop A und Laptop B?})
+\end{itemize}
+\section{Umsetzungsmöglichkeiten}
+Es gibt mehrere Möglichkeiten, einen Chatbot zu erstellen:
+\begin{enumerate}
+	\item Erstellung eines eigenen Large Language Models, welches mit Produktdaten trainiert wird.
+	\item Nutzung eines Chatbot-Anbieters, der mit Trainingsdaten aus dem B2B-Webshop arbeitet.
+\end{enumerate}
+Diese Möglichkeiten werden im Folgenden verglichen.
+\subsection{Eigenes Large Language Model (LLM)}
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{\textwidth}{X|X}
+		Vorteile & Nachteile \\ \hline \hline
+		\textbf{Maximale Kontrolle} & \textbf{Hoher Entwicklungsaufwand} \\
+		$\cdot$ Modell kann individuell trainiert werden & $\cdot$ Aufbau eines eigenen LLMs erfordert erhebliches Know-how\\
+		$\cdot$ Vollständige Anpassung der Antworten & $\cdot$ Längere Implementierungszeit\\ \hline
+		\textbf{Datenschutz und Sicherheit} & \textbf{Wartung und Aktualisierung} \\
+		$\cdot$ Alle Daten bleiben im eigenen System, was im Hinblick auf Datenschutzregelungen vorteilhaft ist & $\cdot$ Kontinuierliche Pflege, Optimierung und Nachtrainieren des Modells sind erforderlich, um relevante Ergebnisse zu liefern \\
+		- & $\cdot$ Aufwendige Skalierung bei steigender Nutzung \\
+	\end{tabularx}
+	\caption{Abwägung der Nutzung eines LLMs}
+\end{table}
+Ein eigenes LLM ist dann zu empfehlen, wenn der Schutz der Privatsphäre und die vollständige Anpassbarkeit im Vordergrund stehen.
+\subsection{Chatbot-Anbieter}
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{\textwidth}{X|X}
+		Vorteile & Nachteile \\ \hline \hline
+		\textbf{Schnelle Implementierung} & \textbf{Abhängigkeit vom Anbieter} \\
+		$\cdot$ Anbieter bieten oft vorgefertigte Tools, APIs und intuitive Dashboards, die eine schnelle und einfache Integration ermöglichen & $\cdot$ Daten und Geschäftsprozesse werden auf die Plattform des Anbieters ausgelagert, was zu Abhängigkeiten führen kann\\
+		$\cdot$ Kein Aufbau eines eigenen Modells notwendig & -\\ \hline
+		\textbf{Wartung und Updates} & \textbf{Datenschutzrisiken} \\
+		$\cdot$ Anbieter übernimmt Wartung, Optimierung und die Bereitstellung aktueller KI-Modelle & $\cdot$ Daten werden an Drittanbieter übermittelt, die teilweise Server außerhalb der EU verwenden \\
+		$\cdot$ Regelmäßßige Updates sorgen dafür, dass das Modell auf dem neuesten Stand der Technik bleibt & - \\ \hline
+		\textbf{Skalierbarkeit} & \textbf{Eingeschränkte Anpassbarkeit}\\
+		$\cdot$ Anbieter verfügen über skalierbare Infrastrukturen, die automatisch auf steigende Nutzungsanforderungen reagieren können & $\cdot$ Anbieter bieten oft weniger Möglichkeiten, das Modell tiefgehend auf unternehmensspezifische Anforderungen anzupassen\\
+		- & $\cdot$ Limitierte Kontrolle über den Trainingsprozess des Modells\\
+	\end{tabularx}
+	\caption{Abwägung der Nutzung eines externen Chatbots}
+\end{table}
+Ein Chatbot-Anbieter wird empfohlen, wenn eine schnelle Implementierung und der Zugang zu den neuesten KI-Technologien wichtiger sind.
+
+Im Fall des B2B-Webshops wird der Chatbot über einen Chatbot-Anbieter bereitgestellt, da vor allem die schnelle Implementierung für das zeitlich begrenzte Projekt von Vorteil ist. Die Trainingsdaten stehen erst wenige Wochen vor Projektende zur Verfügung, so dass nur wenig Zeit für die Implementierung bleibt.
+\section{Anforderungen an den Chatbot}
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{\textwidth}{X|X}
+		Funktionale Anforderungen&Nicht-funktionale Anforderungen\\ \hline \hline
+		$\cdot$ Erkennung von Kundenanfragen in natürlicher Sprache & $\cdot$ Vollständige Antworten in weniger als 10 Sekunden\\
+		$\cdot$ Unterstützung mehrstufiger Dialoge & $\cdot$ 24/7-Zugriff\\
+		- & $\cdot$ Intuitive Interaktion, auch für nicht-technische Nutzer\\
+	\end{tabularx}
+	\caption{Anforderungen an den Chatbot}
+\end{table}
+\section{Datenanforderungen}
+Die für den Chatbot erforderlichen Produktdaten sind unter anderem die Artikelnummer, die technischen Spezifikationen und die Preise.
+\section{Auswahl des Anbieters}
+Nach Recherche und Vergleich mehrerer Anbieter wurde \enquote{Botpress} als Dienstleister ausgewählt. 
+Dieser bietet in seinem kostenlosen Modell die besten Möglichkeiten und 500 kostenlose Anfragen pro Monat.
+\section{Datenintegration in Botpress}
+Die Daten können Botpress auf verschiedene Weise zur Verfügung gestellt werden. 
+Die beiden einfachsten Möglichkeiten sind die Eingabe eines Links zur Website oder die Bereitstellung über eine CSV-Datei.
+
+Bei der ersten Möglichkeit wird die Website bei einer Anfrage analysiert und das Ergebnis an den Kunden zurückgegeben. 
+Nach mehreren Tests mit einer Website hat sich herausgestellt, dass diese Methode ungenaue Antworten liefert und nicht immer die richtigen Produkte ausgibt bzw. bei unpräzisen Anfragen keine passenden Antworten zurückgegeben werden.
+
+Die zweite Möglichkeit besteht darin, eine CSV-Datei mit den Produktdaten in Botpress hochzuladen. 
+Nach mehreren Tests mit Testdaten hat sich gezeigt, dass die Antworten präziser sind und auch bei ungenauen Anfragen sinnvolle Antworten zurückgegeben werden. 
+Ein Nachteil ist, dass die Daten immer manuell aktualisiert werden müssen. 
+Dennoch ist diese Methode für den Einsatz im B2B-Webshop besser geeignet, da auch ungenaue Anfragen sinnvoll beantwortet werden müssen.  
+
 
 \chapter{Projektorganisation}
 \section{Projektmethodik}
