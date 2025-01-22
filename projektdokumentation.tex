@@ -11,7 +11,6 @@
 \usepackage{hyperref}
 \usepackage{fontspec}
 \setmainfont{xcharter}
-\setmonofont{Cascadia Code}
 \usepackage{tcolorbox}
 \usepackage{csquotes}
 \usepackage{setspace}
@@ -19,6 +18,7 @@
 \usepackage{xcolor}
 \usepackage{listings}
 \usepackage{longtable}
+\usepackage{enumitem}
 
 \definecolor{lightgray}{gray}{0.95}
 
@@ -341,7 +341,39 @@ Für das Produkt \emph{Hot Hardware Hub} sind drei Akteure vorgesehen:
 \end{description}
 
 \chapter{Detaillierte Produktfunktionen}
-
+\begin{enumerate}[label=F\arabic*]
+    \item Anmeldung
+    \begin{enumerate}[label=F\arabic{enumi}.\arabic*]
+        \item Kunde kann sich registrieren
+        \item Kunde kann sich nach Registrierung anmelden
+        \item Kunde kann seine Benutzerdaten anzeigen
+        \item Kunde kann gezielt ein Produkt in der Detailansicht öffnen
+    \end{enumerate}
+    
+    \item Anpassung Benutzerdaten (Subkunde)
+    \begin{enumerate}[label=F\arabic{enumi}.\arabic*]
+        \item Subkunde kann Benutzerdaten ändern
+        \item Subkunde kann Passwort zurücksetzen
+        \item Subkunde kann Benutzerkonto löschen
+    \end{enumerate}
+    
+    \item Admin-Benutzer
+    \begin{enumerate}[label=F\arabic{enumi}.\arabic*]
+        \item Adminkonto registrieren
+        \item Admindashboard anzeigen
+        \item Produkte zu CMS hinzufügen
+        \item Produktdetails pflegen
+        \item Erweiterung Item-Model
+    \end{enumerate}
+    
+    \item Produktkatalog
+    \begin{enumerate}[label=F\arabic{enumi}.\arabic*]
+        \item Kunde kann Produktkatalog ansehen
+        \item Kunde kann im Produktkatalog nach Suchkriterien suchen
+        \item Kunde kann per Filterfunktion gewisse Artikel ausblenden/einblenden
+        \item Kunde kann gezielt ein Produkt in der Detailansicht öffnen
+    \end{enumerate}
+\end{enumerate}
 
 \section{User Stories}
 An dieser Stelle sei auf das Scrum-Board verwiesen, das unter folgendem Link zu finden ist: \\
@@ -415,11 +447,11 @@ Als Beispiel folgende Kriterien:
 \end{itemize}
 
 \chapter{Systemarchitektur}
-\begin{itemize}
-	\item Systemdiagramm erstellen
-	\item Beschreibung Microservices
-	\item Übersicht Technologien, Frameworks, Tools
-\end{itemize}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=\textwidth, angle=90]{project_models_diagrams/system_architecture.png}
+	\caption{Systemarchitektur}
+\end{figure}
 
 \chapter{Datenmodell}
 \begin{itemize}
