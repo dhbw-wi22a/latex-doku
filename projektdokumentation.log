@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.1.19)  21 JAN 2025 21:39
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.1.19)  22 JAN 2025 19:20
  restricted system commands enabled.
  file:line:error style messages enabled.
 **"c:/Users/colin/OneDrive - lehre.mosbach.dhbw.de/Studienjahr 3/Projektkonzeption und realisierung/LaTeX Dokumentation/projektdokumentation.tex"
@@ -1115,7 +1115,7 @@ chapter 13.
 
 
 ]
-runsystem(latexminted cleantemp  --timestamp 20250121213915 7B13D03722AE4FDBFAB818D67106C9B5)...executed.
+runsystem(latexminted cleantemp  --timestamp 20250122192019 7B13D03722AE4FDBFAB818D67106C9B5)...executed.
  (./projektdokumentation.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
@@ -1135,7 +1135,7 @@ Here is how much of LuaTeX's memory you used:
  64 fonts using 19186487 bytes
  108i,9n,102p,11054b,786s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/opentype/public/cascadia-code/CascadiaCode-Regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/xcharter/XCharter-Italic.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/xcharter/XCharter-Bold.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/xcharter/XCharter-Roman.otf><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on projektdokumentation.pdf (27 pages, 1908510 bytes).
+Output written on projektdokumentation.pdf (27 pages, 1908520 bytes).
 
 PDF statistics: 420 PDF objects out of 1000 (max. 8388607)
  361 compressed objects within 4 object streams
