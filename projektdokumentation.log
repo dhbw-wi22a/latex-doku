@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.1.19)  22 JAN 2025 23:01
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.1.19)  22 JAN 2025 23:03
  restricted system commands enabled.
  file:line:error style messages enabled.
 **"c:/Users/colin/OneDrive - lehre.mosbach.dhbw.de/Studienjahr 3/Projektkonzeption und realisierung/LaTeX Dokumentation/projektdokumentation.tex"
@@ -968,7 +968,7 @@ LaTeX Font Info:    Font shape `TU/xcharter(0)/bx/n' in size <12> not available
 
 [5]
 chapter 1.
-<Media/Hot Hardware Hub Logo.png, id=116, 1027.84pt x 1027.84pt>
+<Media/Hot Hardware Hub Logo.png, id=118, 1027.84pt x 1027.84pt>
 File: Media/Hot Hardware Hub Logo.png Graphic file (type png)
 <use Media/Hot Hardware Hub Logo.png>
 Package luatex.def Info: Media/Hot Hardware Hub Logo.png  used on input line 169.
@@ -1002,7 +1002,7 @@ chapter 2.
 
 ]
 chapter 3.
-<project_models_diagrams/use_case_diagramm.png, id=158, 1155.31625pt x 821.0675pt>
+<project_models_diagrams/use_case_diagramm.png, id=160, 1155.31625pt x 821.0675pt>
 File: project_models_diagrams/use_case_diagramm.png Graphic file (type png)
 <use project_models_diagrams/use_case_diagramm.png>
 Package luatex.def Info: project_models_diagrams/use_case_diagramm.png  used on input line 334.
@@ -1044,7 +1044,7 @@ chapter 6.
 
 [18]
 chapter 7.
-<project_models_diagrams/system_architecture.png, id=210, 1450.41875pt x 764.8575pt>
+<project_models_diagrams/system_architecture.png, id=212, 1450.41875pt x 764.8575pt>
 File: project_models_diagrams/system_architecture.png Graphic file (type png)
 <use project_models_diagrams/system_architecture.png>
 Package luatex.def Info: project_models_diagrams/system_architecture.png  used on input line 453.
@@ -1127,7 +1127,7 @@ chapter 14.
 
 
 ]
-runsystem(latexminted cleantemp  --timestamp 20250122230110 7B13D03722AE4FDBFAB818D67106C9B5)...executed.
+runsystem(latexminted cleantemp  --timestamp 20250122230320 7B13D03722AE4FDBFAB818D67106C9B5)...executed.
  (./projektdokumentation.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
@@ -1147,10 +1147,10 @@ Here is how much of LuaTeX's memory you used:
  55 fonts using 10884047 bytes
  108i,11n,102p,11054b,778s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/xcharter/XCharter-Italic.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/xcharter/XCharter-Bold.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/xcharter/XCharter-Roman.otf><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on projektdokumentation.pdf (30 pages, 1948400 bytes).
+Output written on projektdokumentation.pdf (30 pages, 1948469 bytes).
 
-PDF statistics: 495 PDF objects out of 1000 (max. 8388607)
- 430 compressed objects within 5 object streams
+PDF statistics: 496 PDF objects out of 1000 (max. 8388607)
+ 431 compressed objects within 5 object streams
  160 named destinations out of 1000 (max. 131072)
  312 words of extra memory for PDF output out of 10000 (max. 100000000)
 
