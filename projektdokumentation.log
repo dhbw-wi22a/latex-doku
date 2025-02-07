@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.1.26)  7 FEB 2025 14:19
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.1.26)  7 FEB 2025 14:28
  restricted system commands enabled.
  file:line:error style messages enabled.
 **"c:/Users/colin/OneDrive - lehre.mosbach.dhbw.de/Studienjahr 3/Projektkonzeption und realisierung/LaTeX Dokumentation/projektdokumentation.tex"
@@ -1119,11 +1119,18 @@ chapter 14.
 [38]
 
 [39]
+Overfull \hbox (13.08124pt too wide) in paragraph at lines 881--882
+[]\TU/lmr/bx/n/12 Alan Kan-jo\TU/lmr/m/n/12 : Un-ter-stütz-te maß-geb-lich bei der Be-reit-stel-lung des Django-Frameworks
+ []
+
+
 
 [40]
 
 [41]
-runsystem(latexminted cleantemp  --timestamp 20250207141922 7B13D03722AE4FDBFAB818D67106C9B5)...executed.
+
+[42]
+runsystem(latexminted cleantemp  --timestamp 20250207142813 7B13D03722AE4FDBFAB818D67106C9B5)...executed.
  (./projektdokumentation.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
@@ -1134,7 +1141,7 @@ Package rerunfilecheck Info: File `projektdokumentation.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 36686 strings out of 475518
+ 36687 strings out of 475518
  156270,1977958 words of node,token memory allocated
  508 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 6 attribute, 65 glue_spec, 6 attribute_list, 2 write, 1 pdf_action nodes
@@ -1143,10 +1150,10 @@ Here is how much of LuaTeX's memory you used:
  45 fonts using 3878935 bytes
  108i,12n,102p,11054b,770s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmromanslant12-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-italic.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb>
-Output written on projektdokumentation.pdf (41 pages, 2000047 bytes).
+Output written on projektdokumentation.pdf (42 pages, 2000603 bytes).
 
-PDF statistics: 703 PDF objects out of 1000 (max. 8388607)
- 619 compressed objects within 7 object streams
- 212 named destinations out of 1000 (max. 131072)
+PDF statistics: 707 PDF objects out of 1000 (max. 8388607)
+ 622 compressed objects within 7 object streams
+ 213 named destinations out of 1000 (max. 131072)
  504 words of extra memory for PDF output out of 10000 (max. 100000000)
 
