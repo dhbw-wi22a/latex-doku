@@ -752,15 +752,17 @@ Ein Chatbot-Anbieter wird empfohlen, wenn eine schnelle Implementierung und der 
 Im Fall des B2B-Webshops wird der Chatbot über einen Chatbot-Anbieter bereitgestellt, da vor allem die schnelle Implementierung für das zeitlich begrenzte Projekt von Vorteil ist. 
 Die Trainingsdaten stehen erst wenige Wochen vor Projektende zur Verfügung, so dass nur wenig Zeit für die Implementierung bleibt.
 \section{Anforderungen an den Chatbot}
-\begin{table}[ht]
+Zu den Anforderungen siehe \cref{tab:Anforderungen an den Chatbot}.
+\begin{table}[!ht]
 	\centering
 	\begin{tabularx}{\textwidth}{X|X}
 		Funktionale Anforderungen&Nicht-funktionale Anforderungen\\ \hline \hline
 		$\cdot$ Erkennung von Kundenanfragen in natürlicher Sprache & $\cdot$ Vollständige Antworten in weniger als 10 Sekunden\\
 		$\cdot$ Unterstützung mehrstufiger Dialoge & $\cdot$ 24/7-Zugriff\\
-		- & $\cdot$ Intuitive Interaktion, auch für nicht-technische Nutzer\\
+		\times & $\cdot$ Intuitive Interaktion, auch für nicht-technische Nutzer\\
 	\end{tabularx}
 	\caption{Anforderungen an den Chatbot}
+	\label{tab:Anforderungen an den Chatbot}
 \end{table}
 \section{Datenanforderungen}
 Die für den Chatbot erforderlichen Produktdaten sind unter anderem die Artikelnummer, die technischen Spezifikationen und die Preise.
@@ -788,12 +790,13 @@ Für die Realisierung im Zuge des Projektes wurde aufgrund der vorliegenden Vort
 Nach Integration der Produktdaten bei dem Anbieter und der darauffolgenden Publikation werden seitens Botpress zwei Skript-Dateien bereitgestellt. Diese Skript-Zeilen können anschließend in das Frontend eingebettet werden. Dadurch wird der Chatbot für die Webshop-Besucher sichtbar und kann verwendet werden.
 
 \section{Bearbeitungsablauf einer Kundenanfrage}
-Im Falle der Eingabe einer Frage in den Chat erfolgt eine Analyse durch das LLM. Für die Beantwortung einfacher Anfragen wird GPT-4o Mini verwendet, für eine bestmögliche Beantwortung GPT-4o und für die Generierung der Antwort. Nach Analyse wird eine Durchsicht der Knowledge Base durchgeführt, in diesem Fall der Produktdatenbank, da keine weitere Knowledge Base zur Verfügung steht. Nach dem Auffinden der passenden Informationen erfolgt die Formulierung einer Antwort und der bereitstellung für den Anfragenden.
+Im Falle der Eingabe einer Frage in den Chat erfolgt eine Analyse durch das LLM. Für die Beantwortung einfacher Anfragen wird GPT~4o~mini verwendet, für eine bestmögliche Beantwortung GPT~4o und für die Generierung der Antwort. Nach Analyse wird eine Durchsicht der Knowledge Base durchgeführt, in diesem Fall der Produktdatenbank, da keine weitere Knowledge Base zur Verfügung steht. Nach dem Auffinden der passenden Informationen erfolgt die Formulierung einer Antwort und der bereitstellung für den Anfragenden.
 
 
 \chapter{Projektorganisation}
 \section{Projektmethodik}
-Die Entwicklung des Webshops für den \textit{Hot Hardware Hub} erfolgt nach der agilen Methode Scrum, da sie besonders gut für komplexe und dynamische Softwareprojekte geeignet ist. Die Wahl von Scrum basiert auf mehreren entscheidenden Faktoren, die sich sowohl auf die Anforderungen des Projekts als auch auf die Besonderheiten der IT-Hardware-Branche beziehen.
+Die Entwicklung des Webshops für den \textit{Hot Hardware Hub} erfolgt nach der agilen Methode Scrum, da sie besonders gut für komplexe und dynamische Softwareprojekte geeignet ist. 
+Die Wahl von Scrum basiert auf mehreren entscheidenden Faktoren, die sich sowohl auf die Anforderungen des Projekts als auch auf die Besonderheiten der IT-Hardware-Branche beziehen.
 
 \begin{enumerate}
 	\item \textbf{Flexibilität und Anpassungsfähigkeit an Marktveränderungen} \\

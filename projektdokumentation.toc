@@ -45,8 +45,8 @@
 \contentsline {subsection}{\numberline {13.4.1}Eigenes Large Language Model (LLM)}{33}{subsection.13.4.1}%
 \contentsline {subsection}{\numberline {13.4.2}Chatbot-Anbieter}{33}{subsection.13.4.2}%
 \contentsline {section}{\numberline {13.5}Anforderungen an den Chatbot}{34}{section.13.5}%
-\contentsline {section}{\numberline {13.6}Datenanforderungen}{34}{section.13.6}%
-\contentsline {section}{\numberline {13.7}Auswahl des Anbieters}{34}{section.13.7}%
+\contentsline {section}{\numberline {13.6}Datenanforderungen}{35}{section.13.6}%
+\contentsline {section}{\numberline {13.7}Auswahl des Anbieters}{35}{section.13.7}%
 \contentsline {section}{\numberline {13.8}Bot-Instructions}{35}{section.13.8}%
 \contentsline {section}{\numberline {13.9}Datenintegration in Botpress}{35}{section.13.9}%
 \contentsline {section}{\numberline {13.10}Integration des Chatbots}{36}{section.13.10}%
