@@ -388,71 +388,115 @@ Eingliederung in Geschäftsfälle gängige Praxis, siehe Beispiele in Discord
 Siehe Kap 4 - \url{https://www.ibr.cs.tu-bs.de/courses/ss07/sep-cm/templates/pflichtenheft.pdf}
 
 
-\chapter{Produktdaten}
-\textbf{Beispiel} \\
-Artikeldaten (max. 50):\\
-Bezeichnung, eine kurze Beschreibung, eine ausführliche Beschreibung, Preise
-/D10/
-(Einkaufspreis beim Hersteller, empfohlener Verkaufspreis des Herstellers,
-tatsächlicher Verkaufspreis im Markt), weitere Herstellerinformationen (u.U.
-komplexes Datum)
-Bestandsdaten (max. 500):\\
-im Markt zum Verkauf zur Verfügung stehende Anzahl der Artikel des Warenkatalogs,
-/D20/
-Produktanzahlen in den Einkaufskörben der Kunden, Anzahlen der bestellten Artikel in
-den ausstehenden Lieferungen
-/D30/ Personaldaten (max. 50):\\
-Name, Vorname, Einstellungsdatum, Einsatz-(Aufgaben-)bereich, Gehalt
-/D40/ Kundendaten (max. 50):\\
-Name, Vorname, Lieferadresse für externe Lieferungen (komplexes Datum), bisheriges
-Einkaufsvolumen zur Berechnung des Treuerabattes, sein Einkaufskorb (wenn er im
-Markt ist) (komplexes Datum)
+\chapter{Datenstruktur und verwaltete Informationen}
 
-\chapter{Qualitätsanforderung}
-In diesem Kapitel wird festgelegt, welche Qualitätsmerkmale das zu entwickelnde Produkt in
-welcher Qualitätsstufe besitzen soll. Vorraussetzung ist, dass Qualitätsmerkmale in
-operationalisierter Form vorliegen. Die operationalisierten Qualitätsmerkmale sind als
-Anhang dem Pflichtenheft beizufügen, falls sie nicht als allgemeine Richtlinie (z. B. Standard,
-Norm) zur Verfügung gestellt werden können.
+Dieses Kapitel beschreibt die strukturierten Daten, die im Webshop verarbeitet und verwaltet werden. Dazu gehören Produktdaten, Bestandsinformationen sowie Kundendaten, die für die Geschäftsprozesse relevant sind.
 
-Als Beispiel folgende Kriterien:
+\section{Produktdaten}
+Die folgenden Informationen werden für jedes Produkt im Webshop gespeichert:
 
 \begin{itemize}
-	\item Funktionalität
-	\item Angemessenheit
-	\item Richtigkeit
-	\item Interoperabilität
-	\item Ordnungsmäßigkeit
-	\item Sicherheit
-	\item Zuverlässigkeit
-	\item Reife
-	\item Fehlertoleranz
-	\item Wiederherstellbarkeit
-	\item Benutzbarkeit
-	\item Verständlichkeit
-	\item Erlernbarkeit
-	\item Bedienbarkeit
-	\item Effizienz
-	\item Zeitverhalten
-	\item Verbrauchsverhalten
-	\item Änderbarkeit
-	\item Analysierbarkeit
-	\item Modifizierbarkeit
-	\item Stabilität
-	\item Prüfbarkeit
-	\item Übertragbarkeit
-	\item Anpassbarkeit
-	\item Installierbarkeit
-	\item Konformität
-	\item Austauschbarkeit
+	\item \textbf{Bezeichnung:} Produktname (z. B. \textit{Dell Latitude 5520})
+	\item \textbf{Kurze Beschreibung:} Prägnante Angabe des Produkts (z. B. \textit{Hochwertiger Business-Laptop mit Intel i7})
+	\item \textbf{Ausführliche Beschreibung:}  
+	Detaillierte Produktspezifikationen, z. B.:  
+	\textit{Intel i7-1165G7, 16GB RAM, 512GB SSD, 15,6-Zoll-Display, Windows 11 Pro, geeignet für anspruchsvolle Geschäftsanwendungen.}
+	\item \textbf{Tatsächlicher Verkaufspreis:} 1.450 €  
+	\item \textbf{Herstellerinformationen:}  
+	\begin{itemize}
+		\item Herstellername (z. B. \textit{Dell})  
+		\item Modellnummer (z. B. \textit{Latitude 5520})  
+	\end{itemize}
 \end{itemize}
 
+\section{Bestandsdaten}
+Folgende Bestandsinformationen werden verwaltet:
+
+\begin{itemize}
+	\item \textbf{Verfügbare Anzahl im Lager:} 150 Einheiten von Artikel X
+	\item \textbf{Produkte im Warenkorb:} 10 Artikel X in 5 verschiedenen Warenkörben
+	\item \textbf{Bestellte, aber noch nicht gelieferte Artikel:} 20 Artikel X sind in ausstehenden Lieferungen in Bearbeitung
+\end{itemize}
+
+\section{Kundendaten}
+Für registrierte Geschäftskunden werden die folgenden Daten gespeichert:
+
+\begin{itemize}
+	\item \textbf{Name und Firmenname:} Jürgen IT GmbH
+	\item \textbf{Liefer- und Rechnungsadresse:} Hauptstraße 15, 74821 Mosbach
+	\item \textbf{E-Mail-Adresse:} juergenIT@web.de
+	\item \textbf{Bisheriges Einkaufsvolumen:} 25.000 €
+	\item \textbf{Aktueller Warenkorb:} 3 Artikel (z. B. 2 Monitore und 1 Drucker)
+	\item \textbf{Einkaufsgruppen und Freigabeprozesse:}  
+	Mitarbeiter mit entsprechender Berechtigung haben Zugriff auf den Bestellverlauf und die Bestellliste.
+\end{itemize}
+
+\chapter{Qualitätsanforderungen}
+In diesem Kapitel werden die Qualitätsmerkmale des zu entwickelnden Produkts und deren erforderliche Qualitätsstufen definiert. Die Qualitätsmerkmale müssen in operationalisierter Form vorliegen.
+
+\begin{enumerate}
+	\item \textbf{Benutzbarkeit (Verständlichkeit)} \\
+	Die Benutzeroberfläche des Webshops muss klar strukturiert und intuitiv verständlich sein. Geschäftskunden sollen ohne lange Einarbeitung schnell die benötigte Hardware finden und bestellen können. Dies erfordert eine durchdachte Navigation, verständliche Produktbeschreibungen und eine optimierte Checkout-Führung.  
+	Der Webshop muss eine konsistente UI/UX-Gestaltung aufweisen und mit gängigen B2B-Shop-Systemen vergleichbar sein, um die Benutzerfreundlichkeit zu maximieren.
+	
+	\item \textbf{Effizienz (Zeitverhalten)} \\
+	Da Geschäftskunden effiziente Beschaffungslösungen benötigen, muss der Webshop schnelle Ladezeiten und eine reibungslose Performance gewährleisten.  
+	- Produktseiten, Suchanfragen und der Checkout-Prozess sollen innerhalb von \textbf{maximal zwei Sekunden} geladen werden.  
+	- Verzögerungen beim Einkaufsprozess sind zu minimieren, um Kaufabbrüche zu vermeiden.  
+	- Ein Caching-Mechanismus und eine performante Datenbankanbindung sind erforderlich, um Lastspitzen abzufangen.
+	
+	\item \textbf{Interoperabilität} \\
+	Die angebotene Hardware muss nahtlos in bestehende IT-Infrastrukturen der Geschäftskunden integrierbar sein.  
+	- Der Webshop muss erweiterte Filter- und Suchfunktionen bieten, um eine gezielte Produktauswahl zu ermöglichen.  
+	- Kunden sollen nach Betriebssystem, Anschlüssen, Dockingstation-Kompatibilität und weiteren relevanten Kriterien filtern können.  
+	- Eine API-Schnittstelle soll bereitgestellt werden, um eine Anbindung an externe ERP-Systeme zu ermöglichen.
+	
+	\item \textbf{Übertragbarkeit (Installierbarkeit)} \\
+	IT-Hardware für Unternehmen muss oft einfach zu installieren sein, insbesondere Server, Netzwerktechnik oder Arbeitsplatzlösungen.  
+	- Der Webshop muss umfassende technische Spezifikationen, Treiberinformationen und Installationsanleitungen bereitstellen.  
+	- Plug-and-Play-Funktionalitäten sollten klar ausgewiesen werden.  
+	- Kompatibilitätsinformationen mit anderen Systemen sind transparent darzustellen.
+	
+	\item \textbf{Zuverlässigkeit (Wiederherstellbarkeit)} \\
+	Die IT-Beschaffung muss auch bei Problemen reibungslos funktionieren.  
+	- Der Webshop muss Rückgabeoptionen, Garantiebedingungen und Service-Level-Agreements (SLAs) klar und verständlich kommunizieren.  
+	- Ein robustes Bestell- und Transaktionsmanagementsystem soll sicherstellen, dass Bestellungen auch im Falle technischer Probleme nicht verloren gehen.  
+	- Im Fehlerfall muss eine automatische Wiederherstellung von abgebrochenen Bestellprozessen gewährleistet sein.  
+\end{enumerate}
+
 \chapter{Systemarchitektur}
+Die nachfolgende Abbildung zeigt die Systemarchitektur des Webshops für den \textit{Hot Hardware Hub}. Der gesamte Aufbau basiert auf einer containerisierten Umgebung, die mithilfe von \textit{Dokploy} auf einem VPS bereitgestellt wird. Die Webshop-Komponenten, Datenbank sowie der Mailservice werden in einem separaten Container ausgeführt, um eine klare Trennung der Komponenten und eine bessere Skalierbarkeit zu gewährleisten.
+
+\section{Komponenten der Architektur}
+\begin{enumerate}
+	\item \textbf{Traefik als Reverse Proxy und Loadbalancer} \\
+	Traefik dient als zentrale Schnittstelle für den Datenverkehr zwischen den Clients und dem System. Es übernimmt die Verteilung der Anfragen an die entsprechenden Komponenten und ermöglicht eine sichere Kommunikation.
+	
+	\item \textbf{Frontend – Angular und NGINX} \\
+	Die Benutzeroberfläche des Webshops wurde mit Angular realisiert. Diese wird über einen NGINX-Webserver ausgeliefert, der statische Inhalte wie HTML, CSS und JavaScript effizient bereitstellt.
+	
+	\item \textbf{Backend – Python Django Framework} \\
+	Das Backend basiert auf dem Python-Django-Framework und wird durch einen \textit{Uvicorn}-Server bereitgestellt. Django stellt die REST-API bereit, über die das Frontend mit dem Backend kommuniziert. Die API wird durch einen dedizierten API-Gateway abgesichert, das die Anfragen verwaltet und gegebenenfalls weiterleitet.
+	
+	\item \textbf{Datenbank – PostgreSQL} \\
+	Die relationalen Daten des Webshops werden in einer PostgreSQL-Datenbank gespeichert. Diese bietet eine zuverlässige und skalierbare Lösung für die Verwaltung der Geschäftsdaten wie Produkte, Bestellungen und Kundendaten.
+	
+	\item \textbf{Statische Ressourcen und Testdaten} \\
+	Statische Inhalte wie Medienoder andere statische Ressourcen werden zentral gespeichert und von Django bereitgestellt.
+	
+	\item \textbf{E-Mail-Service – Go-Mailservice} \\
+	Für die Abwicklung von Benachrichtigungen und E-Mails wird ein separater Go-Mailservice verwendet. Dieser ist über eine REST-Schnittstelle in die Systemarchitektur integriert und stellt sicher, dass alle E-Mails zuverlässig und performant versendet werden.
+\end{enumerate}
+
+\section{Containerisierung und Deployment}
+Alle genannten Dienste werden in Docker-Containern ausgeführt, was eine portable und konsistente Umgebung gewährleistet. Durch den Einsatz von \textit{Dokploy} wird das Deployment automatisiert und in verschiedene Umgebungen wie Test- und Produktionssysteme orchestriert. Diese Containerisierung sorgt für eine klare Trennung der Dienste und ermöglicht es, Updates oder Skalierungen gezielt durchzuführen, ohne das Gesamtsystem zu beeinträchtigen.
+
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth, angle=90]{project_models_diagrams/system_architecture.png}
 	\caption{Systemarchitektur}
 \end{figure}
+
 
 \chapter{Datenmodell}
 \begin{itemize}
@@ -549,12 +593,44 @@ Als Beispiel folgende Kriterien:
 \end{lstlisting}
 
 \chapter{Benutzungsoberflächen}
+Dieses Kapitel beschreibt die Gestaltung der Benutzungsoberflächen des Webshops, einschließlich der zugrunde liegenden Richtlinien und Designentscheidungen. Ziel war es, eine benutzerfreundliche, ästhetische und funktionale Oberfläche zu schaffen, die den Anforderungen von Geschäftskunden gerecht wird.
+
+\section{Gestaltungsrichtlinien}
+Die Entwicklung der Benutzeroberflächen erfolgte auf Grundlage der folgenden Prinzipien:
 \begin{itemize}
-	\item Erläuterung nach welchen Richtlinien wir uns richten
-	\item Mockups einfügen
-	\item Verwendete Farben, Schriften, Layout etc.
+	\item \textbf{Klarheit und Übersichtlichkeit:} Die Benutzeroberfläche wurde bewusst schlicht und übersichtlich gestaltet, damit sich Nutzer schnell orientieren können.
+	\item \textbf{Konsistenz:} Einheitliche Farben, Schriften und Layout-Elemente sorgen für ein durchgängiges Erscheinungsbild und intuitive Bedienbarkeit.
+	\item \textbf{Fokus auf Funktionalität:} Alle Designelemente unterstützen die Nutzbarkeit und wurden auf unnötige Komplexität verzichtet.
+	\item \textbf{Responsivität:} Die Benutzeroberfläche ist für verschiedene Endgeräte optimiert, sodass der Webshop sowohl auf Desktops als auch auf mobilen Geräten problemlos genutzt werden kann.
 \end{itemize}
 
+\section{Verwendete Farben, Schriften und Layout}
+\subsection{Farben}
+Das Farbschema des Webshops basiert auf den Farben des erstellten Logos, um ein einheitliches und professionelles Erscheinungsbild zu gewährleisten. Die Logo-Farben wurden gezielt auf die Benutzeroberfläche übertragen, um eine visuelle Wiedererkennung und Markenidentität zu schaffen.
+
+\begin{itemize}
+	\item \textbf{Primärfarben:} Die Hauptfarben des Logos werden verwendet, um wichtige Elemente wie Buttons, Links und Header hervorzuheben.
+	\item \textbf{Sekundärfarben:} Ergänzende Farben aus der Farbpalette des Logos dienen zur Unterstützung der Struktur, beispielsweise für Hintergrundbereiche oder Navigationsleisten.
+	\item \textbf{Neutralfarben:} Dezente Farben wie Weiß, Grau und Schwarz werden genutzt, um Inhalte klar und übersichtlich zu präsentieren, ohne die Hauptfarben zu überlagern.
+\end{itemize}
+
+Die Übertragung der Logo-Farben in die Benutzeroberfläche sorgt für eine harmonische Verbindung zwischen der Corporate Identity und dem Design des Webshops. Dies unterstützt nicht nur die Ästhetik, sondern stärkt auch die Wiedererkennbarkeit der Marke.
+\subsection{Schriften}
+Als Schriftart wurde \textit{Roboto} gewählt, da sie modern und gut lesbar ist. Die Schriftgröße und -farbe wurden so angepasst, dass Inhalte auch bei längerer Nutzung gut wahrgenommen werden können.
+
+\subsection{Layout}
+Das Layout des Webshops ist klar strukturiert und folgt etablierten Standards:
+\begin{itemize}
+	\item \textbf{Navigation:} Eine horizontale Hauptnavigation bietet schnellen Zugriff auf Kategorien und wichtige Funktionen.
+	\item \textbf{Produktdarstellung:} Produkte werden in einer Rasteransicht präsentiert, um eine übersichtliche Darstellung zu gewährleisten.
+	\item \textbf{Interaktive Elemente:} Buttons und Links sind optisch hervorgehoben, sodass sie leicht identifizierbar sind.
+\end{itemize}
+
+\section{Verzicht auf Mockups}
+Für die Gestaltung der Benutzeroberfläche wurden keine Mockups verwendet. Stattdessen erfolgte die Entwicklung direkt iterativ während der Programmierung. Entscheidungen zur Gestaltung wurden im Team getroffen und kontinuierlich basierend auf Feedback optimiert. Diese Vorgehensweise ermöglichte eine flexible Anpassung an die Projektanforderungen.
+
+\section{Zusammenfassung}
+Die Benutzeroberflächen des Webshops wurden mit dem Ziel entwickelt, ein benutzerfreundliches und funktionales Design zu schaffen. Durch die Orientierung an klaren Richtlinien und Standards konnte eine Oberfläche geschaffen werden, die Geschäftskunden ein angenehmes und effizientes Nutzungserlebnis bietet.
 \chapter{Nicht-funktionale Anforderungen}
 \begin{description}
 	\item[NF10] Das Produkt soll plattformunabhängig sein.
@@ -586,7 +662,7 @@ Beispiel:\\
 Netzwerkverbindung des Servers zum Computersystem der Testmaschinen, von dem die
 Abmeldung der Reifen nach durchgeführtem Testlauf kommt.
 
-\chapter{KI-Konzeption}
+\chapter{Konzeption der KI-Komponente}
 \section{Idee}
 Für den Webshop soll ein Chatbot erstellt werden. 
 Dieser soll Fragen der Kunden beantworten, um die Kundenzufriedenheit zu erhöhen.
@@ -656,6 +732,9 @@ Die für den Chatbot erforderlichen Produktdaten sind unter anderem die Artikeln
 \section{Auswahl des Anbieters}
 Nach Recherche und Vergleich mehrerer Anbieter wurde \enquote{Botpress} als Dienstleister ausgewählt. 
 Dieser bietet in seinem kostenlosen Modell die besten Möglichkeiten und 500 kostenlose Anfragen pro Monat.
+Darüber hinaus besteht die Möglichkeit, den Chatbot an die spezifischen Anforderungen anzupassen und eine reibungslose Integration in das Frontend zu gewährleisten.
+\section{Bot-Instructions}
+Gemäß den Vorgaben der Bot-Instructions ist der Chatbot dazu angehalten, spezifische Antworten zu geben und festgelegte Zuständigkeiten zu erfüllen. Es wurde eine Erwartung an die Klarheit und Konsistenz der Antworten des Chatbots gestellt, wobei gleichzeitig die Interaktionsmöglichkeit des Nutzers durch Buttons festgesetzt wurde. Darüber hinaus wurde spezifiziert, dass der Bot Produktempfehlungen ausgeben soll, die den Angaben des Kunden entsprechen. 
 \section{Datenintegration in Botpress}
 Die Daten können Botpress auf verschiedene Weise zur Verfügung gestellt werden. 
 Die beiden einfachsten Möglichkeiten sind die Eingabe eines Links zur Website oder die Bereitstellung über eine CSV-Datei.
@@ -668,11 +747,124 @@ Nach mehreren Tests mit Testdaten hat sich gezeigt, dass die Antworten präziser
 Ein Nachteil ist, dass die Daten immer manuell aktualisiert werden müssen. 
 Dennoch ist diese Methode für den Einsatz im B2B-Webshop besser geeignet, da auch ungenaue Anfragen sinnvoll beantwortet werden müssen.  
 
+Für die Realisierung im Zuge des Projektes wurde aufgrund der vorliegenden Vorteile die zweite Variante gewählt. Die Produktdaten welche im Webshop eingebunden werden, wurde in die Wissensdatenbank des Chat-Bots eingefügt.
+
+\section{Integration des Chatbots}
+Nach Integration der Produktdaten bei dem Anbieter und der darauffolgenden Publikation werden seitens Botpress zwei Skript-Dateien bereitgestellt. Diese Skript-Zeilen können anschließend in das Frontend eingebettet werden. Dadurch wird der Chatbot für die Webshop-Besucher sichtbar und kann verwendet werden.
+
+\section{Bearbeitungsablauf einer Kundenanfrage}
+Im Falle der Eingabe einer Frage in den Chat erfolgt eine Analyse durch das LLM. Für die Beantwortung einfacher Anfragen wird GPT-4o Mini verwendet, für eine bestmögliche Beantwortung GPT-4o und für die Generierung der Antwort. Nach Analyse wird eine Durchsicht der Knowledge Base durchgeführt, in diesem Fall der Produktdatenbank, da keine weitere Knowledge Base zur Verfügung steht. Nach dem Auffinden der passenden Informationen erfolgt die Formulierung einer Antwort und der bereitstellung für den Anfragenden.
+
 
 \chapter{Projektorganisation}
 \section{Projektmethodik}
-Beschreibung, wieso nach agiler Methode (Scrum) vorgegangen wird
+Die Entwicklung des Webshops für den \textit{Hot Hardware Hub} erfolgt nach der agilen Methode Scrum, da sie besonders gut für komplexe und dynamische Softwareprojekte geeignet ist. Die Wahl von Scrum basiert auf mehreren entscheidenden Faktoren, die sich sowohl auf die Anforderungen des Projekts als auch auf die Besonderheiten der IT-Hardware-Branche beziehen.
+
+\begin{enumerate}
+	\item \textbf{Flexibilität und Anpassungsfähigkeit an Marktveränderungen} \\
+	Die IT-Hardware-Branche ist einem schnellen Wandel unterworfen. Technologien entwickeln sich stetig weiter, neue Produkte kommen auf den Markt, und Kundenanforderungen ändern sich kontinuierlich. Eine klassische, langfristig fixierte Projektplanung (z. B. nach dem Wasserfall-Modell) wäre in einem solch dynamischen Umfeld nicht optimal, da sie wenig Spielraum für kurzfristige Anpassungen lässt.
+	
+	Scrum hingegen ermöglicht eine iterative Entwicklung in kurzen Sprints, sodass regelmäßig neue Funktionen ausgeliefert und Feedback berücksichtigt werden können. Sollte sich beispielsweise herausstellen, dass Geschäftskunden verstärkt eine bestimmte Filterfunktion oder eine alternative Bezahlmethode benötigen, kann dies flexibel in den nächsten Sprint aufgenommen und zeitnah umgesetzt werden.
+	
+	\item \textbf{Frühzeitige und kontinuierliche Lieferung von Produktinkrementen} \\
+	Ein zentraler Vorteil von Scrum ist die Möglichkeit, den Webshop schrittweise zu entwickeln und dabei nach jedem Sprint ein funktionsfähiges Produktinkrement bereitzustellen. Dadurch wird verhindert, dass das gesamte Projekt erst nach Monaten oder Jahren einsatzbereit ist. Stattdessen können erste Versionen – beispielsweise als \textit{Minimal Viable Product} (MVP) – schon früh veröffentlicht und dann fortlaufend verbessert werden.
+	
+	Diese Vorgehensweise ermöglicht es, den Markt zu testen, erste Kunden zu gewinnen und deren Feedback in die Weiterentwicklung einfließen zu lassen. So kann sichergestellt werden, dass der Webshop von Beginn an kundenorientiert ist und sich an deren tatsächlichen Bedürfnissen ausrichtet.
+	
+	\item \textbf{Kundenorientierung und Einbindung von Stakeholdern} \\
+	Da der \textit{Hot Hardware Hub} speziell für Geschäftskunden konzipiert ist, ist es essenziell, dass deren Anforderungen und Wünsche kontinuierlich in die Entwicklung einfließen. Im Scrum-Framework übernimmt der \textbf{Product Owner} diese Rolle, indem er die Interessen der Kunden vertritt, Anforderungen priorisiert und das \textit{Product Backlog} verwaltet.
+	
+	Regelmäßige Meetings, wie die \textit{Sprint Reviews}, bieten zudem die Möglichkeit, dass Stakeholder (z. B. zukünftige Nutzer, Geschäftspartner oder interne Entscheider) den Entwicklungsfortschritt begutachten und frühzeitig Rückmeldungen geben. Dadurch wird sichergestellt, dass der Webshop von Anfang an marktgerecht entwickelt wird und spätere, kostenintensive Nachbesserungen vermieden werden.
+	
+	\item \textbf{Verbesserung der Zusammenarbeit im Entwicklungsteam} \\
+	Scrum fördert eine transparente und effiziente Zusammenarbeit innerhalb des Teams. Durch \textit{Daily Scrums} wird sichergestellt, dass jedes Teammitglied stets über den aktuellen Stand der Entwicklung informiert ist. Probleme oder Hindernisse werden frühzeitig erkannt und können schnell gelöst werden.
+	
+	Zudem sorgen \textit{Sprint Retrospektiven} dafür, dass das Team kontinuierlich aus vergangenen Sprints lernt und seine Arbeitsweise verbessert. Dies steigert nicht nur die Effizienz, sondern auch die Qualität des Endprodukts.
+	
+	\item \textbf{Risikominimierung durch regelmäßige Tests und Qualitätskontrollen} \\
+	Ein weiteres zentrales Argument für die Nutzung von Scrum ist die Minimierung von Risiken durch regelmäßige Tests und Überprüfungen. Da in jedem Sprint ein testbares Produktinkrement entsteht, können Fehler frühzeitig erkannt und behoben werden.
+	
+	Im Gegensatz zu traditionellen Entwicklungsmodellen, bei denen ein Produkt erst am Ende der Entwicklungsphase umfassend getestet wird, stellt Scrum sicher, dass kontinuierlich getestet wird. Dies reduziert das Risiko schwerwiegender Fehler oder technischer Probleme, die ansonsten erst spät erkannt würden.
+	
+	\item \textbf{Schnellere Markteinführung und höhere Wettbewerbsfähigkeit} \\
+	Durch die iterative Entwicklung und die regelmäßige Auslieferung neuer Funktionen kann der Webshop schneller auf den Markt gebracht werden. Ein früher Release als \textit{MVP} ermöglicht es, bereits erste Umsätze zu generieren und auf Basis von Kundenfeedback weiterzuentwickeln.
+	
+	Gerade im B2B-Bereich, wo Unternehmen nach effizienten und unkomplizierten Beschaffungslösungen suchen, ist es wichtig, möglichst früh eine funktionierende Plattform bereitzustellen. Durch Scrum kann der Webshop frühzeitig in Betrieb genommen und schrittweise verbessert werden, was einen klaren Wettbewerbsvorteil darstellt.
+\end{enumerate}
+
 \section{Rollenverteilung}
-Rollenverteilung innerhalb des Projektes mit Verantwortlichkeiten darstellen
+
+Um eine klare Aufgabenverteilung sicherzustellen und die Effizienz des Teams zu maximieren, wurde das Projektteam in verschiedene Verantwortungsbereiche eingeteilt. Nachfolgend wird die Rollenverteilung detailliert beschrieben:
+
+\subsection{Organisatorische Leitung}
+Die organisatorische Leitung des Projekts übernehmen \textbf{Colin Christ} und \textbf{Steffen Spatzek}. Ihre Aufgaben umfassen:
+\begin{itemize}
+	\item Koordination der übergeordneten Prozesse
+	\item Führung des Teams und Sicherstellung einer effizienten Zusammenarbeit
+	\item Verantwortung für die Kommunikation zwischen den einzelnen Bereichen
+	\item Sicherstellung der Zielerreichung und Einhaltung von Deadlines
+	\item Eingreifen bei Problemen während der Sprints
+	\item Vorbereitung und Durchführung von Terminen (Zwischenstand vor dem Plenum und Dozenten)
+	\end{itemize}
+
+\subsection{Organisation}
+Die Verantwortung für die organisatorischen Inhalte des Projekts liegt bei:
+\begin{itemize}
+	\item \textbf{Lukas Tomanek}, \textbf{Colin Christ}, \textbf{Steffen Spatzek}, \textbf{David Schreck}, \textbf{Bastian Bamberger}, \textbf{Milan Jeevakanthan}, \textbf{Luis Väth} und \textbf{Daniel Arnold}
+\end{itemize}
+Ihre Aufgaben umfassen:
+\begin{itemize}
+	\item Erstellung und Pflege der Projektdokumentation
+	\item Regelmäßige Aktualisierung des Pflichtenhefts
+	\item Erstellung von Modellen und Diagrammen
+	\item Planung und Bearbeitung der Sprints
+	\item Präzise Formulierung der Use-Cases als Grundlage für die Projektarbeit
+	\item Finale Version des Pflichtenhefts als LaTex-Dokument
+\end{itemize}
+
+\subsection{Entwicklung}
+Das Entwicklungsteam setzt sich aus den folgenden Mitgliedern zusammen:
+\begin{itemize}
+	\item \textbf{Steffen Spatzek}: Führende Rolle in der Entwicklung, verantwortlich für die technische Umsetzung, insbesondere:
+	\begin{itemize}
+		\item Weiterentwicklung des Django Frameworks
+		\item Containerisierung der Services
+		\item Verantwortung für den Deployprozess und die VPS-Überwachung
+		\item Erstellung und Bereitstellung des E-Mail-Services
+		\item Mitwirkung bei der Fehlerbehebung und Verbesserung des Frontends 
+	\end{itemize}
+	\item \textbf{Alan Kanjo}: Unterstützte maßgeblich bei der Bereitstellung des Django Frameworks und der Containerisierung.
+	\item \textbf{Andreas Denz}: Federführend verantwortlich für die Entwicklung des Frontends in Angular und Unterstützung im Backend.
+	\item \textbf{Paul Kunz}, \textbf{Julian Strohm} sowie \textbf{David Schreck}: Unterstützten bei verschiedenen Aspekten der Softwareentwicklung, darunter:
+	\begin{itemize}
+		\item Unterstützung bei Backend- und Frontend-Funktionalitäten
+		\item Mithilfe bei der Entwicklung neuer Features für den Webshop
+		\item Bereitstellung von HTML-Templates für den E-Mail-Versand. 
+		\item Produktdatenaufbereitung und -bereitstellung
+	\end{itemize}
+\end{itemize}
+
+\subsection{Solution Architecture}
+Die technische Architektur des Systems wird von \textbf{Steffen Spatzek} sowie \textbf{Alan Kanjo} verantwortet. Die Aufgaben umfassen:
+\begin{itemize}
+	\item Sicherstellung einer stabilen, skalierbaren und sicheren IT-Infrastruktur
+	\item Reproduzierbare Versionen mithilfe von Docker-Containern
+\end{itemize}
+
+\subsection{User Experience (UX)}
+Für die Gestaltung und Optimierung der Benutzererfahrung sind die folgenden Teammitglieder zuständig:
+\begin{itemize}
+	\item \textbf{Alan Kanjo}, \textbf{Lukas Tomanek}, \textbf{David Schreck}, \textbf{Julian Strohm}, \textbf{Bastian Bamberger} und \textbf{Milan Jeevakanthan}
+\end{itemize}
+Ihre Aufgaben umfassen:
+\begin{itemize}
+	\item Gestaltung und Verbesserung der Benutzeroberfläche
+	\item Durchführung von User-Testing
+	\item Implementierung von UX-Optimierungen zur Gewährleistung eines reibungslosen und angenehmen Einkaufserlebnisses für Geschäftskunden
+	\item Earbeitung eines Konzeptes für die Integration eines KI-Chatbots sowie Vorbereitungsmaßnahme für die Implementierung
+\end{itemize}
+
+\subsection{Zusammenfassung}
+Diese Rollenverteilung gewährleistet, dass alle relevanten Aspekte des Webshop-Projekts professionell abgedeckt werden. Das Team kann effizient auf Anforderungen reagieren und Herausforderungen während der Entwicklung meistern.
 
 \end{document}
