@@ -7,10 +7,11 @@
 \usepackage{graphicx}
 \usepackage{polyglossia}
 \setdefaultlanguage{german}
+\setotherlanguages{english}
 \usepackage{minted}
 \usepackage{hyperref}
 \usepackage{fontspec}
-\setmainfont{xcharter}
+%\setmainfont{Latin Modern Roman}
 \usepackage{tcolorbox}
 \usepackage{csquotes}
 \usepackage{setspace}
@@ -20,6 +21,7 @@
 \usepackage{longtable}
 \usepackage{enumitem}
 \usepackage{tabularx}
+\usepackage{eurosym}
 
 \definecolor{lightgray}{gray}{0.95}
 
@@ -385,8 +387,8 @@ Damit werden Redundanzen in der Dokumentation vermieden.
 \section{Funktionale Anforderungen}
 Die funktionalen Anforderungen des Webshops orientieren sich an gängigen Geschäftsfällen, um die Prozesse der IT-Beschaffung effizient abzubilden. Dazu zählen unter anderem:
 \begin{itemize}
-	\item \textbf{Benutzerverwaltung:} Registrierung, Anmeldung und Verwaltung von Geschäftskunden sowie Unterstützung von Einkaufsgruppen mit Freigabeprozessen.
-	\item \textbf{Produktverwaltung:} Hinzufügen, Bearbeiten und Entfernen von Produkten durch Administratoren.
+	\item \textbf{Benutzerverwaltung:} Registrierung, Anmeldung und Verwaltung von Geschäftskunden sowie Unterstützung von Einkäufergruppen bei Freigabeprozessen.
+	\item \textbf{Produktverwaltung:} Hinzufügen, Ändern und Löschen von Produkten durch Administratoren.
 	\item \textbf{Warenkorb- und Bestellprozess:} Produkte in den Warenkorb legen, Bestellungen aufgeben und Bestellhistorien einsehen.
 	\item \textbf{Such- und Filterfunktionen:} Detaillierte Suche und Filterung nach Produktkategorien, Eigenschaften und Verfügbarkeit.
 	\item \textbf{E-Mail-Benachrichtigungen:} Automatisierte E-Mails für Bestellbestätigungen, Rückmeldungen und Freigabeprozesse.
@@ -401,16 +403,16 @@ Dieses Kapitel beschreibt die strukturierten Daten, die im Webshop verarbeitet u
 Die folgenden Informationen werden für jedes Produkt im Webshop gespeichert:
 
 \begin{itemize}
-	\item \textbf{Bezeichnung:} Produktname (z. B. \textit{Dell Latitude 5520})
-	\item \textbf{Kurze Beschreibung:} Prägnante Angabe des Produkts (z. B. \textit{Hochwertiger Business-Laptop mit Intel i7})
+	\item \textbf{Bezeichnung:} Produktname (z.~B. Dell Latitude 5520)
+	\item \textbf{Kurze Beschreibung:} Prägnante Angabe des Produkts (z.~B. Hochwertiger Business-Laptop mit Intel i7)
 	\item \textbf{Ausführliche Beschreibung:}  
-	Detaillierte Produktspezifikationen, z. B.:  
-	\textit{Intel i7-1165G7, 16GB RAM, 512GB SSD, 15,6-Zoll-Display, Windows 11 Pro, geeignet für anspruchsvolle Geschäftsanwendungen.}
-	\item \textbf{Tatsächlicher Verkaufspreis:} 1.450 €  
+	Detaillierte Produktspezifikationen, z.~B.:  
+	Inte Core i7-1165G7, 16 GB RAM, 512 GB SSD, 15,6-Zoll-Display, Windows 11 Pro, geeignet für anspruchsvolle Geschäftsanwendungen.
+	\item \textbf{Tatsächlicher Verkaufspreis:} 1.450~\euro
 	\item \textbf{Herstellerinformationen:}  
 	\begin{itemize}
-		\item Herstellername (z. B. \textit{Dell})  
-		\item Modellnummer (z. B. \textit{Latitude 5520})  
+		\item Herstellername (z.~B. Dell)  
+		\item Modellnummer (z.~B. Latitude 5520)  
 	\end{itemize}
 \end{itemize}
 
@@ -441,32 +443,44 @@ In diesem Kapitel werden die Qualitätsmerkmale des zu entwickelnden Produkts un
 
 \begin{enumerate}
 	\item \textbf{Benutzbarkeit (Verständlichkeit)} \\
-	Die Benutzeroberfläche des Webshops muss klar strukturiert und intuitiv verständlich sein. Geschäftskunden sollen ohne lange Einarbeitung schnell die benötigte Hardware finden und bestellen können. Dies erfordert eine durchdachte Navigation, verständliche Produktbeschreibungen und eine optimierte Checkout-Führung.  
-	Der Webshop muss eine konsistente UI/UX-Gestaltung aufweisen und mit gängigen B2B-Shop-Systemen vergleichbar sein, um die Benutzerfreundlichkeit zu maximieren.
+	Die Benutzeroberfläche des Webshops muss klar strukturiert und intuitiv verständlich sein. 
+	\begin{itemize}
+		\item Geschäftskunden sollen ohne lange Einarbeitungszeit schnell die benötigte Hardware finden und bestellen können. 
+		\item Dies erfordert eine durchdachte Navigation, verständliche Produktbeschreibungen und eine optimierte Kaufabwicklung.
+		\item Der Webshop muss ein konsistentes UI/UX-Design aufweisen und mit gängigen B2B-Shopsystemen vergleichbar sein, um die Usability zu maximieren.
+	\end{itemize}
 	
 	\item \textbf{Effizienz (Zeitverhalten)} \\
-	Da Geschäftskunden effiziente Beschaffungslösungen benötigen, muss der Webshop schnelle Ladezeiten und eine reibungslose Performance gewährleisten.  
-	- Produktseiten, Suchanfragen und der Checkout-Prozess sollen innerhalb von \textbf{maximal zwei Sekunden} geladen werden.  
-	- Verzögerungen beim Einkaufsprozess sind zu minimieren, um Kaufabbrüche zu vermeiden.  
-	- Ein Caching-Mechanismus und eine performante Datenbankanbindung sind erforderlich, um Lastspitzen abzufangen.
+	Da Geschäftskunden effiziente Beschaffungslösungen benötigen, muss der Webshop schnelle Ladezeiten und eine reibungslose Performance gewährleisten.
+	\begin{itemize}
+		\item Produktseiten, Suchanfragen und der Checkout-Prozess sollen innerhalb von \textbf{maximal zwei Sekunden} geladen werden.
+		\item Verzögerungen beim Einkaufsprozess sind zu minimieren, um Kaufabbrüche zu vermeiden.
+		\item Ein Caching-Mechanismus und eine performante Datenbankanbindung sind erforderlich, um Lastspitzen abzufangen.
+	\end{itemize}
 	
 	\item \textbf{Interoperabilität} \\
-	Die angebotene Hardware muss nahtlos in bestehende IT-Infrastrukturen der Geschäftskunden integrierbar sein.  
-	- Der Webshop muss erweiterte Filter- und Suchfunktionen bieten, um eine gezielte Produktauswahl zu ermöglichen.  
-	- Kunden sollen nach Betriebssystem, Anschlüssen, Dockingstation-Kompatibilität und weiteren relevanten Kriterien filtern können.  
-	- Eine API-Schnittstelle soll bereitgestellt werden, um eine Anbindung an externe ERP-Systeme zu ermöglichen.
+	Die angebotene Hardware muss sich nahtlos in die bestehende IT-Infrastruktur der Geschäftskunden integrieren lassen.
+	\begin{itemize}
+		\item Der Webshop muss umfangreiche Filter- und Suchfunktionen bieten, um eine gezielte Produktauswahl zu ermöglichen.
+		\item Kunden sollen nach Betriebssystemen, Ports, Dockingstation-Kompatibilität und anderen relevanten Kriterien filtern können.
+		\item Eine API-Schnittstelle soll bereitgestellt werden, um die Anbindung an externe ERP-Systeme zu ermöglichen.
+	\end{itemize}
 	
 	\item \textbf{Übertragbarkeit (Installierbarkeit)} \\
-	IT-Hardware für Unternehmen muss oft einfach zu installieren sein, insbesondere Server, Netzwerktechnik oder Arbeitsplatzlösungen.  
-	- Der Webshop muss umfassende technische Spezifikationen, Treiberinformationen und Installationsanleitungen bereitstellen.  
-	- Plug-and-Play-Funktionalitäten sollten klar ausgewiesen werden.  
-	- Kompatibilitätsinformationen mit anderen Systemen sind transparent darzustellen.
+	IT-Hardware für Unternehmen muss oft einfach zu installieren sein, insbesondere Server, Netzwerktechnik oder Arbeitsplatzlösungen.
+	\begin{itemize}
+		\item Der Webshop muss umfassende technische Spezifikationen, Treiberinformationen und Installationsanleitungen bereitstellen.
+		\item Plug-and-Play-Funktionalitäten sollten klar ausgewiesen werden.
+		\item Kompatibilitätsinformationen mit anderen Systemen sind transparent darzustellen.
+	\end{itemize}
 	
 	\item \textbf{Zuverlässigkeit (Wiederherstellbarkeit)} \\
-	Die IT-Beschaffung muss auch bei Problemen reibungslos funktionieren.  
-	- Der Webshop muss Rückgabeoptionen, Garantiebedingungen und Service-Level-Agreements (SLAs) klar und verständlich kommunizieren.  
-	- Ein robustes Bestell- und Transaktionsmanagementsystem soll sicherstellen, dass Bestellungen auch im Falle technischer Probleme nicht verloren gehen.  
-	- Im Fehlerfall muss eine automatische Wiederherstellung von abgebrochenen Bestellprozessen gewährleistet sein.  
+	Die IT-Beschaffung muss auch bei Problemen reibungslos funktionieren.
+	\begin{itemize}
+		\item Der Webshop muss Rückgabeoptionen, Garantiebedingungen und \textenglish{Service Level Agreements} (SLAs) klar und verständlich kommunizieren.
+		\item Ein robustes Bestell- und Transaktionsmanagementsystem soll sicherstellen, dass Bestellungen auch im Falle technischer Probleme nicht verloren gehen.
+		\item Im Fehlerfall muss eine automatische Wiederherstellung von abgebrochenen Bestellprozessen gewährleistet sein.  
+	\end{itemize}
 \end{enumerate}
 
 \chapter{Systemarchitektur}
@@ -477,19 +491,19 @@ Die nachfolgende Abbildung zeigt die Systemarchitektur des Webshops für den \te
 	\item \textbf{Traefik als Reverse Proxy und Loadbalancer} \\
 	Traefik dient als zentrale Schnittstelle für den Datenverkehr zwischen den Clients und dem System. Es übernimmt die Verteilung der Anfragen an die entsprechenden Komponenten und ermöglicht eine sichere Kommunikation.
 	
-	\item \textbf{Frontend – Angular und NGINX} \\
+	\item \textbf{Frontend -- Angular und NGINX} \\
 	Die Benutzeroberfläche des Webshops wurde mit Angular realisiert. Diese wird über einen NGINX-Webserver ausgeliefert, der statische Inhalte wie HTML, CSS und JavaScript effizient bereitstellt.
 	
-	\item \textbf{Backend – Python Django Framework} \\
+	\item \textbf{Backend -- Python Django Framework} \\
 	Das Backend basiert auf dem Python-Django-Framework und wird durch einen \textit{Uvicorn}-Server bereitgestellt. Django stellt die REST-API bereit, über die das Frontend mit dem Backend kommuniziert. Die API wird durch einen dedizierten API-Gateway abgesichert, das die Anfragen verwaltet und gegebenenfalls weiterleitet.
 	
-	\item \textbf{Datenbank – PostgreSQL} \\
+	\item \textbf{Datenbank -- PostgreSQL} \\
 	Die relationalen Daten des Webshops werden in einer PostgreSQL-Datenbank gespeichert. Diese bietet eine zuverlässige und skalierbare Lösung für die Verwaltung der Geschäftsdaten wie Produkte, Bestellungen und Kundendaten.
 	
 	\item \textbf{Statische Ressourcen und Testdaten} \\
 	Statische Inhalte wie Medienoder andere statische Ressourcen werden zentral gespeichert und von Django bereitgestellt.
 	
-	\item \textbf{E-Mail-Service – Go-Mailservice} \\
+	\item \textbf{E-Mail-Service -- Go-Mailservice} \\
 	Für die Abwicklung von Benachrichtigungen und E-Mails wird ein separater Go-Mailservice verwendet. Dieser ist über eine REST-Schnittstelle in die Systemarchitektur integriert und stellt sicher, dass alle E-Mails zuverlässig und performant versendet werden.
 \end{enumerate}
 
@@ -607,7 +621,7 @@ Dieses Kapitel beschreibt die Gestaltung der Benutzungsoberflächen des Webshops
 \section{Gestaltungsrichtlinien}
 Die Entwicklung der Benutzeroberflächen erfolgte auf Grundlage der folgenden Prinzipien:
 \begin{itemize}
-	\item \textbf{Klarheit und Übersichtlichkeit:} Die Benutzeroberfläche wurde bewusst schlicht und übersichtlich gestaltet, damit sich Nutzer schnell orientieren können.
+	\item \textbf{Klarheit und Übersichtlichkeit:} Die Benutzeroberfläche wurde bewusst einfach und übersichtlich gestaltet, um dem Benutzer eine schnelle Orientierung zu ermöglichen.
 	\item \textbf{Konsistenz:} Einheitliche Farben, Schriften und Layout-Elemente sorgen für ein durchgängiges Erscheinungsbild und intuitive Bedienbarkeit.
 	\item \textbf{Fokus auf Funktionalität:} Alle Designelemente unterstützen die Nutzbarkeit und wurden auf unnötige Komplexität verzichtet.
 	\item \textbf{Responsivität:} Die Benutzeroberfläche ist für verschiedene Endgeräte optimiert, sodass der Webshop sowohl auf Desktops als auch auf mobilen Geräten problemlos genutzt werden kann.
@@ -723,19 +737,20 @@ Ein eigenes LLM ist dann zu empfehlen, wenn der Schutz der Privatsphäre und die
 		Vorteile & Nachteile \\ \hline \hline
 		\textbf{Schnelle Implementierung} & \textbf{Abhängigkeit vom Anbieter} \\
 		$\cdot$ Anbieter bieten oft vorgefertigte Tools, APIs und intuitive Dashboards, die eine schnelle und einfache Integration ermöglichen & $\cdot$ Daten und Geschäftsprozesse werden auf die Plattform des Anbieters ausgelagert, was zu Abhängigkeiten führen kann\\
-		$\cdot$ Kein Aufbau eines eigenen Modells notwendig & -\\ \hline
+		$\cdot$ Kein Aufbau eines eigenen Modells notwendig & \times  \\ \hline
 		\textbf{Wartung und Updates} & \textbf{Datenschutzrisiken} \\
 		$\cdot$ Anbieter übernimmt Wartung, Optimierung und die Bereitstellung aktueller KI-Modelle & $\cdot$ Daten werden an Drittanbieter übermittelt, die teilweise Server außerhalb der EU verwenden \\
-		$\cdot$ Regelmäßßige Updates sorgen dafür, dass das Modell auf dem neuesten Stand der Technik bleibt & - \\ \hline
+		$\cdot$ Regelmäßßige Updates sorgen dafür, dass das Modell auf dem neuesten Stand der Technik bleibt & \times \\ \hline
 		\textbf{Skalierbarkeit} & \textbf{Eingeschränkte Anpassbarkeit}\\
 		$\cdot$ Anbieter verfügen über skalierbare Infrastrukturen, die automatisch auf steigende Nutzungsanforderungen reagieren können & $\cdot$ Anbieter bieten oft weniger Möglichkeiten, das Modell tiefgehend auf unternehmensspezifische Anforderungen anzupassen\\
-		- & $\cdot$ Limitierte Kontrolle über den Trainingsprozess des Modells\\
-	\end{tabularx}
+		\times & $\cdot$ Limitierte Kontrolle über den Trainingsprozess des Modells\\
+	\end{tabularx} 
 	\caption{Abwägung der Nutzung eines externen Chatbots}
 \end{table}
 Ein Chatbot-Anbieter wird empfohlen, wenn eine schnelle Implementierung und der Zugang zu den neuesten KI-Technologien wichtiger sind.
 
-Im Fall des B2B-Webshops wird der Chatbot über einen Chatbot-Anbieter bereitgestellt, da vor allem die schnelle Implementierung für das zeitlich begrenzte Projekt von Vorteil ist. Die Trainingsdaten stehen erst wenige Wochen vor Projektende zur Verfügung, so dass nur wenig Zeit für die Implementierung bleibt.
+Im Fall des B2B-Webshops wird der Chatbot über einen Chatbot-Anbieter bereitgestellt, da vor allem die schnelle Implementierung für das zeitlich begrenzte Projekt von Vorteil ist. 
+Die Trainingsdaten stehen erst wenige Wochen vor Projektende zur Verfügung, so dass nur wenig Zeit für die Implementierung bleibt.
 \section{Anforderungen an den Chatbot}
 \begin{table}[ht]
 	\centering
