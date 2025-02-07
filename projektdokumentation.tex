@@ -383,13 +383,18 @@ An dieser Stelle sei auf das Scrum-Board verwiesen, das unter folgendem Link zu 
 Damit werden Redundanzen in der Dokumentation vermieden.
 
 \section{Funktionale Anforderungen}
-Eingliederung in Geschäftsfälle gängige Praxis, siehe Beispiele in Discord
+Die funktionalen Anforderungen des Webshops orientieren sich an gängigen Geschäftsfällen, um die Prozesse der IT-Beschaffung effizient abzubilden. Dazu zählen unter anderem:
+\begin{itemize}
+	\item \textbf{Benutzerverwaltung:} Registrierung, Anmeldung und Verwaltung von Geschäftskunden sowie Unterstützung von Einkaufsgruppen mit Freigabeprozessen.
+	\item \textbf{Produktverwaltung:} Hinzufügen, Bearbeiten und Entfernen von Produkten durch Administratoren.
+	\item \textbf{Warenkorb- und Bestellprozess:} Produkte in den Warenkorb legen, Bestellungen aufgeben und Bestellhistorien einsehen.
+	\item \textbf{Such- und Filterfunktionen:} Detaillierte Suche und Filterung nach Produktkategorien, Eigenschaften und Verfügbarkeit.
+	\item \textbf{E-Mail-Benachrichtigungen:} Automatisierte E-Mails für Bestellbestätigungen, Rückmeldungen und Freigabeprozesse.
+\end{itemize}
 
-Siehe Kap 4 - \url{https://www.ibr.cs.tu-bs.de/courses/ss07/sep-cm/templates/pflichtenheft.pdf}
-
+Diese Anforderungen decken die zentralen Funktionen ab, die für einen effizienten Betrieb des Webshops und die Erfüllung der Geschäftsziele notwendig sind.
 
 \chapter{Datenstruktur und verwaltete Informationen}
-
 Dieses Kapitel beschreibt die strukturierten Daten, die im Webshop verarbeitet und verwaltet werden. Dazu gehören Produktdaten, Bestandsinformationen sowie Kundendaten, die für die Geschäftsprozesse relevant sind.
 
 \section{Produktdaten}
@@ -592,6 +597,10 @@ Alle genannten Dienste werden in Docker-Containern ausgeführt, was eine portabl
 	}
 \end{lstlisting}
 
+Die vollständige Liste aller verfügbaren Endpunkte, inklusive detaillierter Dokumentation und interaktiver Testmöglichkeiten, kann über die \textbf{Swagger-UI} abgerufen werden. Diese stellt eine umfassende Übersicht bereit und ermöglicht es Entwicklern, die API effizient zu nutzen und Endpunkte direkt zu testen.
+
+\url{http://hothardwarehubtest-shop-xco4pb-80b302-5-75-130-54.traefik.me/web/api/swagger/}
+
 \chapter{Benutzungsoberflächen}
 Dieses Kapitel beschreibt die Gestaltung der Benutzungsoberflächen des Webshops, einschließlich der zugrunde liegenden Richtlinien und Designentscheidungen. Ziel war es, eine benutzerfreundliche, ästhetische und funktionale Oberfläche zu schaffen, die den Anforderungen von Geschäftskunden gerecht wird.
 
@@ -640,27 +649,38 @@ Die Benutzeroberflächen des Webshops wurden mit dem Ziel entwickelt, ein benutz
 \end{description}
 
 \chapter{Technische Produktumgebung}
-%TODO
-In diesem Kapitel wird die technische Umgebung des Produktes beschrieben. Bei Client /
-Server - Anwendungen ist die Umgebung jeweils für Client und Server getrennt anzugeben.
-10.1 Software\\
-Hier wird angegeben, welche Softwaresysteme (z. B. Betriebssystem, Datenbank,
-Fenstersystem, usw.) zur Verfügung stehen.\\
-Beispiel:
-Server-Betriebssystem: Linux.
-Client-Betriebssystem: Windows XP oder Browser (für Fernwartung).
-10.2 Hardware \\
-Hier werden die Hardware Komponenten (z. B. CPU, Peripherie) in minimaler und maximaler
-Konfiguration aufgeführt, die für den Produkteinsatz vorgesehen sind.
-Beispiel:\\
-Server: PC
-Client: PC und browserfähiges Gerät mit Grafikbildschirm (für Fernwartung).
-10.3 Orgware\\
-Hier wird aufgeführt, unter welchen organisatorischen Randbedingungen bzw.
-Voraussetzungen das Produkt eingesetzt werden soll.
-Beispiel:\\
-Netzwerkverbindung des Servers zum Computersystem der Testmaschinen, von dem die
-Abmeldung der Reifen nach durchgeführtem Testlauf kommt.
+
+In diesem Kapitel wird die technische Umgebung des Webshops beschrieben. Da es sich um eine Client-Server-Anwendung handelt, werden die Umgebungen für den Client und den Server getrennt betrachtet.
+
+\section{Software}
+Die Bereitstellung des Webshops erfolgt über einen Virtual Private Server (VPS). Die eingesetzten Softwaresysteme umfassen:
+\begin{itemize}
+	\item \textbf{Server-Betriebssystem:} Linux (Ubuntu)
+	\item \textbf{Dokploy:} Deployplattform für die Orchestrierung und Verwaltung von Servicen
+	\item \textbf{Webserver:} NGINX für die Auslieferung des Frontends
+	\item \textbf{Backend:} Python Django Framework mit Uvicorn
+	\item \textbf{Datenbank:} PostgreSQL für die Speicherung von Produkt-, Bestands- und Kundendaten sowie SQLite für die Testumgebung
+	\item \textbf{Containerisierung:} Docker für die Bereitstellung und Isolation der verschiedenen Komponenten
+	\item \textbf{Reverse Proxy:} Traefik zur Verteilung und Absicherung der Anfragen
+	\item \textbf{Frontend:} Angular für die Entwicklung der Benutzeroberfläche
+	\item \textbf{Mailservice:} Mailservice in Go, mit REST-Schnittstelle welche vom Backend getriggert wird.
+	\end{itemize}
+Für den Client wird lediglich ein browserfähiges Endgerät benötigt. Der Webshop ist mit allen modernen Webbrowsern (z. B. Chrome, Firefox, Edge) kompatibel.
+
+\section{Hardware}
+Die minimalen und maximalen Anforderungen an die Hardware sind wie folgt:
+\begin{itemize}
+	\item \textbf{Server:} VPS mit mindestens 2 CPU-Kernen, 4 GB RAM und 50 GB Speicherplatz
+	\item \textbf{Client:} Ein browserfähiges Endgerät mit Internetzugang
+\end{itemize}
+
+\section{Orgware}
+Der Webshop wird unter den folgenden organisatorischen Randbedingungen eingesetzt:
+\begin{itemize}
+	\item Der Server benötigt eine stabile Netzwerkverbindung, um alle Anfragen der Clients zu verarbeiten und mit der Datenbank zu kommunizieren.
+	\item Der Zugriff auf den Webshop erfolgt über gängige Webbrowser, wodurch keine zusätzliche Softwareinstallation auf Client-Geräten notwendig ist.
+	\item Administratoren und Entwickler benötigen Zugriff auf den VPS zur Wartung, Überwachung und Weiterentwicklung des Systems
+\end{itemize}
 
 \chapter{Konzeption der KI-Komponente}
 \section{Idee}

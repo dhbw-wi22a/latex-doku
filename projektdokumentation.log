@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (MiKTeX 22.1) (format=lualatex 2024.12.5)  7 FEB 2025 12:07
+This is LuaHBTeX, Version 1.14.0 (MiKTeX 22.1) (format=lualatex 2024.12.5)  7 FEB 2025 12:47
  system commands enabled.
 **projektdokumentation.tex
 (./projektdokumentation.tex
@@ -321,10 +321,10 @@ Package polyglossia Info: Setting LuaTeX font renderer to Harfbuzz.
 s-german.ldf"
 File: gloss-german.ldf polyglossia: module for German
 Module polyglossia Info: Language data for german
+(polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	
 (polyglossia)            righthyphenmin	2
-(polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            patterns	hyph-de-1901.pat.txt
 (polyglossia)            synonyms	 on input line 16
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
@@ -1267,10 +1267,10 @@ LaTeX Info: Redefining \rmfamily on input line 72.
 LaTeX Info: Redefining \sffamily on input line 72.
 LaTeX Info: Redefining \ttfamily on input line 72.
 Module polyglossia Info: Language data for ngerman
+(polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	
 (polyglossia)            righthyphenmin	2
-(polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            patterns	hyph-de-1996.pat.txt
 (polyglossia)            synonyms	 on input line 72
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 3 
@@ -1320,10 +1320,10 @@ ed!
 (tocbasic)                Currently used number width = 30.02399pt,
 (tocbasic)                Wanted number separation    = 4.79993pt,
 (tocbasic)                Reserved number width       = 27.60004pt on input lin
-e 48.
+e 52.
 
 
-Overfull \hbox (2.42395pt too wide) detected at line 48
+Overfull \hbox (2.42395pt too wide) detected at line 52
 \TU/xcharter(0)/m/n/12 13.10 
  []
 
@@ -1333,10 +1333,10 @@ ed!
 (tocbasic)                Currently used number width = 30.02399pt,
 (tocbasic)                Wanted number separation    = 4.79993pt,
 (tocbasic)                Reserved number width       = 27.60004pt on input lin
-e 49.
+e 53.
 
 
-Overfull \hbox (2.42395pt too wide) detected at line 49
+Overfull \hbox (2.42395pt too wide) detected at line 53
 \TU/xcharter(0)/m/n/12 13.11 
  []
 
@@ -1361,7 +1361,7 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface.
 
-<Media/Hot Hardware Hub Logo.png, id=157, 1027.84pt x 1027.84pt>
+<Media/Hot Hardware Hub Logo.png, id=165, 1027.84pt x 1027.84pt>
 File: Media/Hot Hardware Hub Logo.png Graphic file (type png)
 <use Media/Hot Hardware Hub Logo.png>
 Package luatex.def Info: Media/Hot Hardware Hub Logo.png  used on input line 16
@@ -1383,7 +1383,7 @@ chapter 2.
 
 ]
 chapter 3.
-<project_models_diagrams/use_case_diagramm.png, id=198, 1155.31625pt x 821.0675
+<project_models_diagrams/use_case_diagramm.png, id=206, 1155.31625pt x 821.0675
 pt>
 File: project_models_diagrams/use_case_diagramm.png Graphic file (type png)
 <use project_models_diagrams/use_case_diagramm.png>
@@ -1399,15 +1399,15 @@ chapter 4.
 
 
 ]
-Overfull \hbox (65.45251pt too wide) in paragraph at lines 388--389
-[]\TU/xcharter(0)/m/n/12 Sie-he Kap 4 - []$\TU/lmtt/m/n/12 https://www.ibr.cs.tu
--[]bs.de/courses/ss07/sep-[]cm/templates/pflichtenheft.
+Overfull \hbox (3.34898pt too wide) in paragraph at lines 389--390
+[]\TU/xcharter(0)/b/n/12 Pro-dukt-ver-wal-tung: \TU/xcharter(0)/m/n/12 Hin-zu-f
+ü-gen, Be-ar-bei-ten und Ent-fer-nen von Pro-duk-ten durch
  []
 
 [15]
 chapter 5.
 
-Overfull \hbox (12.61697pt too wide) in paragraph at lines 400--401
+Overfull \hbox (12.61697pt too wide) in paragraph at lines 405--406
 []\TU/xcharter(0)/b/n/12 Kur-ze Be-schrei-bung: \TU/xcharter(0)/m/n/12 Prä-gnan
 -te An-ga-be des Pro-dukts (z. B. \TU/xcharter(0)/m/it/12 Hoch-wer-ti-ger Busine
 ss-
@@ -1422,7 +1422,7 @@ chapter 6.
 
 
 ]
-Overfull \hbox (33.761pt too wide) in paragraph at lines 460--465
+Overfull \hbox (33.761pt too wide) in paragraph at lines 465--470
 \TU/xcharter(0)/m/n/12 Web-shop muss Rück-ga-be-op-tio-nen, Ga-ran-tie-be-din-g
 un-gen und Service-Level-Agreements
  []
@@ -1430,7 +1430,7 @@ un-gen und Service-Level-Agreements
 [19]
 chapter 7.
 
-Overfull \hbox (4.00789pt too wide) in paragraph at lines 478--480
+Overfull \hbox (4.00789pt too wide) in paragraph at lines 483--485
 \TU/xcharter(0)/m/it/12 Uvicorn\TU/xcharter(0)/m/n/12 -Server be-reit-ge-stellt.
  Djan-go stellt die REST-API be-reit, über die das Front-
  []
@@ -1439,12 +1439,12 @@ Overfull \hbox (4.00789pt too wide) in paragraph at lines 478--480
 
 
 ]
-<project_models_diagrams/system_architecture.png, id=268, 1450.41875pt x 764.85
+<project_models_diagrams/system_architecture.png, id=274, 1450.41875pt x 764.85
 75pt>
 File: project_models_diagrams/system_architecture.png Graphic file (type png)
 <use project_models_diagrams/system_architecture.png>
 Package luatex.def Info: project_models_diagrams/system_architecture.png  used 
-on input line 496.
+on input line 501.
 (luatex.def)             Requested size: 448.13095pt x 236.30975pt.
  [21] [22<./project_models_diagrams/system_architecture.png>]
 chapter 8.
@@ -1454,14 +1454,20 @@ chapter 8.
 ]
 chapter 9.
 
-Overfull \hbox (50.753pt too wide) in alignment at lines 510--526
+Overfull \hbox (50.753pt too wide) in alignment at lines 515--531
  [][][][] 
  []
 
 [24
 
 
-] [25]
+]
+Overfull \hbox (0.32852pt too wide) in paragraph at lines 602--603
+[][]$\TU/lmtt/m/n/12 http://hothardwarehubtest-[]shop-[]xco4pb-[]80b302-[]5-[]75
+-[]130-[]54.traefik.me/web/
+ []
+
+[25]
 chapter 10.
 [26
 
@@ -1476,34 +1482,34 @@ chapter 12.
 [30
 
 
-]
+] [31]
 chapter 13.
-[31
+[32
 
 
 ]
-Underfull \hbox (badness 4556) in paragraph at lines 695--695
+Underfull \hbox (badness 4556) in paragraph at lines 715--715
 []|$\OMS/cmsy/m/n/12 $ \TU/xcharter(0)/m/n/12 Kon-ti-nu-ier-li-che Pfle-ge, Op-
 ti-mie-rung
  []
 
 
-Underfull \hbox (badness 3758) in paragraph at lines 713--713
+Underfull \hbox (badness 3758) in paragraph at lines 733--733
 \TU/xcharter(0)/m/n/12 gen-de Nut-zungs-an-for-de-run-gen re-agie-
  []
 
-[32] [33] [34] [35]
+[33] [34] [35] [36]
 chapter 14.
-[36
+[37
 
 
-] [37] [38] [39]
-Overfull \hbox (3.34105pt too wide) in paragraph at lines 868--869
+] [38] [39] [40]
+Overfull \hbox (3.34105pt too wide) in paragraph at lines 888--889
 \TU/xcharter(0)/m/n/12 Die-se Rol-len-ver-tei-lung ge-währ-leis-tet, dass al-le
  re-le-van-ten Aspek-te des Webshop-Projekts
  []
 
-[40] [41] (./projektdokumentation.aux)
+[41] [42] (./projektdokumentation.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
@@ -1513,14 +1519,14 @@ Package rerunfilecheck Info: File `projektdokumentation.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 33610 strings out of 476444
+ 33617 strings out of 476444
  156270,1977958 words of node,token memory allocated
  513 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 6 attribute, 66 glue_spec,
  6 attribute_list, 2 write, 1 pdf_action nodes
-   avail lists: 1:3,2:2101,3:440,4:2636,5:2748,6:96,7:6547,8:81,9:6906,10:15,11:
-778
- 54803 multiletter control sequences out of 65536+600000
+   avail lists: 1:3,2:2099,3:495,4:2636,5:2874,6:108,7:6547,8:114,9:6943,10:15,1
+1:778
+ 54806 multiletter control sequences out of 65536+600000
  55 fonts using 10914767 bytes
  108i,11n,102p,10935b,823s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Library/Application Support/MiKTeX/texmfs/install/fonts/opentype/public/lm/lmm
@@ -1532,9 +1538,9 @@ rary/Application Support/MiKTeX/texmfs/install/fonts/opentype/public/xcharter/XC
 harter-Bold.otf></Library/Application Support/MiKTeX/texmfs/install/fonts/openty
 pe/public/xcharter/XCharter-Roman.otf></Library/Application Support/MiKTeX/texmf
 s/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on projektdokumentation.pdf (41 pages, 2044746 bytes).
+Output written on projektdokumentation.pdf (42 pages, 2051070 bytes).
 
-PDF statistics: 659 PDF objects out of 1000 (max. 8388607)
- 209 named destinations out of 1000 (max. 131072)
- 480 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 680 PDF objects out of 1000 (max. 8388607)
+ 213 named destinations out of 1000 (max. 131072)
+ 504 words of extra memory for PDF output out of 10000 (max. 100000000)
 
