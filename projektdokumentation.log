@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (MiKTeX 22.1) (format=lualatex 2024.12.5)  11 FEB 2025 16:15
+This is LuaHBTeX, Version 1.14.0 (MiKTeX 22.1) (format=lualatex 2024.12.5)  11 FEB 2025 16:25
  system commands enabled.
 **projektdokumentation.tex
 (./projektdokumentation.tex
@@ -322,11 +322,11 @@ s-german.ldf"
 File: gloss-german.ldf polyglossia: module for German
 Module polyglossia Info: Language data for german
 (polyglossia)            righthyphenmin	2
-(polyglossia)            lefthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            hyphenation	
+(polyglossia)            lefthyphenmin	2
 (polyglossia)            synonyms	
-(polyglossia)            loader	loadhyph-de-1901.tex on input line 16
+(polyglossia)            hyphenation	 on input line 16
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 16
 Package polyglossia Info: Option: German, spelling=new.
@@ -1239,11 +1239,11 @@ LaTeX Info: Redefining \sffamily on input line 74.
 LaTeX Info: Redefining \ttfamily on input line 74.
 Module polyglossia Info: Language data for ngerman
 (polyglossia)            righthyphenmin	2
-(polyglossia)            lefthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            hyphenation	
+(polyglossia)            lefthyphenmin	2
 (polyglossia)            synonyms	
-(polyglossia)            loader	loadhyph-de-1996.tex on input line 74
+(polyglossia)            hyphenation	 on input line 74
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 3 
 on input line 74
 <Media/dhbwlogo.png, id=6, 316.18124pt x 160.6pt>
@@ -1342,13 +1342,13 @@ Package luatex.def Info: project_models_diagrams/SeqDia_BenutzerReg.png  used o
 n input line 404.
 (luatex.def)             Requested size: 448.13095pt x 451.51047pt.
 [16]
-<project_models_diagrams/SeqDia_BenutzerLogin.png, id=285, 668.4975pt x 673.516
-25pt>
+<project_models_diagrams/SeqDia_BenutzerLogin.png, id=285, 598.235pt x 543.0287
+5pt>
 File: project_models_diagrams/SeqDia_BenutzerLogin.png Graphic file (type png)
 <use project_models_diagrams/SeqDia_BenutzerLogin.png>
 Package luatex.def Info: project_models_diagrams/SeqDia_BenutzerLogin.png  used
  on input line 411.
-(luatex.def)             Requested size: 448.13095pt x 451.51047pt.
+(luatex.def)             Requested size: 448.13095pt x 406.78168pt.
  [17<./project_models_diagrams/SeqDia_BenutzerReg.png>]
 <project_models_diagrams/SeqDia_PasswortReset.png, id=292, 668.4975pt x 673.516
 25pt>
@@ -1498,7 +1498,7 @@ TeX/texmfs/install/fonts/opentype/public/lm/lmroman12-regular.otf></Library/Appl
 ication Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 </Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/eurosym/f
 eymr10.pfb>
-Output written on projektdokumentation.pdf (52 pages, 2199149 bytes).
+Output written on projektdokumentation.pdf (52 pages, 2196807 bytes).
 
 PDF statistics: 839 PDF objects out of 1000 (max. 8388607)
  244 named destinations out of 1000 (max. 131072)
