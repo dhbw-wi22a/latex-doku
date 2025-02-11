@@ -396,6 +396,36 @@ Die funktionalen Anforderungen des Webshops orientieren sich an gängigen Gesch�
 
 Diese Anforderungen decken die zentralen Funktionen ab, die für einen effizienten Betrieb des Webshops und die Erfüllung der Geschäftsziele notwendig sind.
 
+\section{Systemabläufe und Sequenzdiagramme}
+
+	\subsection{Benutzerregistrierung}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{project_models_diagrams/SeqDia_BenutzerReg.png}
+		\caption{Sequenzdigramm - Benutzerregistrierung}
+	\end{figure}
+	
+	\subsection{Benutzeranmeldung}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{project_models_diagrams/SeqDia_BenutzerLogin.png}
+		\caption{Sequenzdiagramm - Benutzeranmeldung}
+	\end{figure}
+	
+	\subsection{Passwort zurücksetzen}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{project_models_diagrams/SeqDia_PasswortReset.png}
+		\caption{Sequenzdiagramm - Benutzeranmeldung}
+	\end{figure}
+	
+	\subsection{Bestellaufgabe (Registrierter Benutzer)}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{project_models_diagrams/SeqDia_BestellungAufgeben.png}
+		\caption{Sequenzdiagramm - Bestellaufgabe als registrierter Benutzer}
+	\end{figure}
+
 \chapter{Datenstruktur und verwaltete Informationen}
 Dieses Kapitel beschreibt die strukturierten Daten, die im Webshop verarbeitet und verwaltet werden. Dazu gehören Produktdaten, Bestandsinformationen sowie Kundendaten, die für die Geschäftsprozesse relevant sind.
 
@@ -792,6 +822,105 @@ Nach Integration der Produktdaten bei dem Anbieter und der darauffolgenden Publi
 \section{Bearbeitungsablauf einer Kundenanfrage}
 Im Falle der Eingabe einer Frage in den Chat erfolgt eine Analyse durch das LLM. Für die Beantwortung einfacher Anfragen wird GPT~4o~mini verwendet, für eine bestmögliche Beantwortung GPT~4o und für die Generierung der Antwort. Nach Analyse wird eine Durchsicht der Knowledge Base durchgeführt, in diesem Fall der Produktdatenbank, da keine weitere Knowledge Base zur Verfügung steht. Nach dem Auffinden der passenden Informationen erfolgt die Formulierung einer Antwort und der bereitstellung für den Anfragenden.
 
+\chapter{Erweiterungspotenziale und zukünftige Funktionen}
+
+Im Rahmen der bisherigen Entwicklung wurden zentrale Features des B2B-Webshops umgesetzt. Dennoch gibt es eine Reihe von Erweiterungspotenzialen, die die Benutzererfahrung verbessern, betriebliche Abläufe optimieren und langfristig eine stärkere Kundenbindung ermöglichen können. Die folgenden Abschnitte erläutern verschiedene geplante oder angedachte Funktionen und deren Mehrwert.
+
+\section{Gruppenfunktionen}
+
+Die backendseitige Implementierung der Gruppenfunktionen ist bereits abgeschlossen, jedoch fehlt die Integration in das Frontend. Die Gruppenfunktionalität ermöglicht es registrierten Kunden, andere Kunden aus ihrem Unternehmen, ihrer Abteilung oder ihrem Team in eine gemeinsame Einkaufsgruppe einzuladen. Ein Benutzer kann gleichzeitig Gruppenadministrator in mehreren Gruppen sowie Mitglied in weiteren Gruppen sein.
+
+\subsection{Geplante Funktionen}
+\begin{itemize}
+	\item \textbf{Geteilte Merklisten:} Gruppenmitglieder können gemeinsame Merklisten anlegen und verwalten. Dadurch können Teams effizient Produkte für zukünftige Bestellungen vormerken.
+	\item \textbf{Freigabeprozess für Bestellungen:}  
+	- Falls ein Gruppenmitglied eine Bestellung auslösen möchte, muss diese erst vom Gruppenadministrator genehmigt werden.  
+	- Dies gewährleistet eine interne Kontrolle, um unautorisierte oder fehlerhafte Bestellungen zu vermeiden.  
+	- Besonders nützlich für größere Unternehmen, in denen beispielsweise Azubis oder Mitarbeiter aus nicht-beschaffungsrelevanten Abteilungen bestellen, aber eine übergeordnete Prüfung notwendig ist.
+\end{itemize}
+
+Diese Funktionen erleichtern die Einkaufskontrolle und helfen Unternehmen, ihre internen Bestellprozesse effizienter zu gestalten.
+
+\section{Detailliertes Monitoring für Betreiber}
+
+Derzeit existiert lediglich ein grundlegendes Uptime-Dashboard für den Shopbetreiber, um die Verfügbarkeit des Systems zu überwachen. Zukünftig wäre die Erweiterung um ein detailliertes Monitoring sinnvoll.
+
+\subsection{Mögliche Erweiterungen}
+\begin{itemize}
+	\item \textbf{Ein umfassendes Betreiber-Dashboard,} das über den Django-Admin-Bereich hinausgeht und eine visuell ansprechendere Oberfläche bietet.
+	\item \textbf{Darstellung relevanter Kennzahlen für Betreiber und Führungsebene,} darunter:
+	\begin{itemize}
+		\item Top 5 Artikel pro Woche, Monat oder Jahr
+		\item Umsatzstatistiken und Verkaufszahlen pro Kategorie
+		\item Durchschnittliche Artikelanzahl pro Bestellung
+		\item Häufigkeit von Rückgaben und deren Ursachen
+	\end{itemize}
+\end{itemize}
+
+Ein solches Dashboard würde dem Shopbetreiber wertvolle Einblicke in das Kaufverhalten und die Performance des Shops geben, wodurch datengetriebene Entscheidungen erleichtert werden.
+
+\section{Detaillierter Kundenbereich}
+
+Der bestehende Kundenbereich zeigt derzeit nur grundlegende Kundendaten an. Die Erweiterung um zusätzliche Funktionen würde die Benutzerfreundlichkeit und den Komfort für Geschäftskunden erheblich steigern.
+
+\subsection{Vorgeschlagene Verbesserungen}
+\begin{itemize}
+	\item \textbf{Anzeige vergangener Warenkörbe:} Kunden können bereits zusammengestellte Warenkörbe erneut bestellen, ohne Produkte erneut manuell hinzufügen zu müssen.
+	\item \textbf{Visuelle Einkaufsstatistiken:} Darstellung von Grafiken zu ausgegebenem Geld, meistgekauften Produkten und Einkaufsgewohnheiten.
+	\item \textbf{Retoure- und Gewährleistungsmanagement:}  
+	- Kunden können defekte oder fehlerhafte Artikel über ein eigenes Formular melden.  
+	- Statusverfolgung für Rücksendungen direkt im Kundenbereich.  
+	- Abwicklung von Retouren gemäß den gesetzlichen Vorgaben.
+\end{itemize}
+
+Diese Funktionen würden die Benutzerfreundlichkeit des Shops verbessern und Geschäftsprozesse für Kunden effizienter gestalten.
+
+\section{Detaillierte Produktansicht und Vergleichsfunktion}
+
+Die derzeitige Produktdetailansicht ist rudimentär und könnte erheblich erweitert werden, um Kunden eine bessere Entscheidungsgrundlage zu bieten.
+
+\subsection{Mögliche Verbesserungen}
+\begin{itemize}
+	\item \textbf{Eigene Produktseite für jedes Produkt,} auf der zusätzliche technische Details sowie:
+	\begin{itemize}
+		\item Produktdatenblätter
+		\item Montage- und Nutzungshinweise
+		\item Hinweise zu Batterien und Entsorgung
+	\end{itemize}
+	bereitgestellt werden.
+	\item \textbf{Produktvergleichsfunktion:}  
+	- Kunden können zwei bis vier Produkte direkt gegenüberstellen.  
+	- Wichtige Eigenschaften (z. B. RAM, CPU-Leistung) werden hervorgehoben.  
+	- Automatische Empfehlung eines „besten Produkts“ basierend auf den Kategorien.  
+	\item \textbf{KI-gestütztes Scoring:}  
+	- Der integrierte KI-Chatbot analysiert Kundenanforderungen und schlägt basierend auf den vorhandenen Produktmerkmalen das passendste Produkt vor.
+\end{itemize}
+
+Diese Funktionalität würde eine deutliche Verbesserung der Produktauswahl für Geschäftskunden bedeuten.
+
+\section{Gutscheine, Rabatte und Loyalty-Programm}
+
+Zur langfristigen Kundenbindung könnte der Webshop verschiedene Mechanismen für Rabatte, Gutscheine und Bonusprogramme integrieren.
+
+\subsection{Mögliche Ansätze}
+\begin{itemize}
+	\item \textbf{Loyalty-Programm:}  
+	- Kunden erhalten gestaffelte Rabatte basierend auf ihrem Einkaufsvolumen pro Jahr.
+	- Beispielsweise: 5\% Rabatt ab 10.000€ Umsatz, 10\% Rabatt ab 25.000€.
+	\item \textbf{Saisonale Rabattaktionen:}  
+	- Angebote zu bestimmten Anlässen (Black Friday, Osteraktionen, Sommerloch-Verkäufe).
+	\item \textbf{Personalisierte Rabattangebote:}  
+	- Kunden, die Warenkörbe nicht abschließen oder Produkte länger auf der Wunschliste haben, erhalten gezielte Rabatte.  
+	- Beispielsweise: \textit{„10\% Rabatt auf Ihre nächste Bestellung – gültig bis XYZ.“}
+\end{itemize}
+
+Ein solches System würde die Kaufmotivation steigern und Kunden langfristig an den Shop binden.
+
+\section{Fazit}
+
+Die hier beschriebenen Erweiterungen zeigen großes Potenzial, um die Funktionalität und Benutzerfreundlichkeit des Webshops weiter zu verbessern. Durch \textbf{Gruppenfunktionen} können Unternehmen effizienter zusammenarbeiten, während \textbf{detaillierte Monitoring- und Kundenbereiche} den Shopbetreiber und Geschäftskunden mit wichtigen Informationen versorgen. Die Integration von \textbf{KI-gestützten Produktvergleichen} und \textbf{Rabattmechanismen} würde zudem die Kundenbindung erhöhen und zu langfristigem Umsatzwachstum beitragen.
+
+Diese Funktionen können in zukünftigen Entwicklungsphasen priorisiert und schrittweise implementiert werden, um den Webshop kontinuierlich zu optimieren und an die Bedürfnisse der Nutzer anzupassen.
 
 \chapter{Projektorganisation}
 \section{Projektmethodik}
